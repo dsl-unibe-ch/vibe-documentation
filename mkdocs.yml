@@ -1,0 +1,51 @@
+site_name: VIBE User Documentation
+
+# Copyright footer
+copyright: 'Copyright &copy; University of Bern, Data Science Lab'
+# Link to repo
+repo_name: 'dsl-unibe-ch/vibe-documentation'
+repo_url: 'https://github.com/dsl-unibe-ch/vibe-documentation'
+edit_uri: 'edit/main/docs'
+
+use_directory_urls: false
+nav:
+  - index.md
+  - getting_started.md
+
+# Configuration
+theme:
+  name: material
+
+extra_css:
+  - 'stylesheets/unibe.css'
+
+plugins:
+  - git-revision-date
+  - search
+
+# See https://python-markdown.github.io/extensions/ and
+# See https://github.com/Python-Markdown/markdown/wiki/Third-Party-Extensions#Bundles
+#     https://facelessuser.github.io/pymdown-extensions/
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - codehilite:
+      guess_lang: false
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - sane_lists
+  - smarty
+  - tables
+  - toc
+
+# Social links bottom right
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/dsl-unibe-ch
