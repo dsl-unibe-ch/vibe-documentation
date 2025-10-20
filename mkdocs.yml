@@ -17,11 +17,11 @@ nav:
     - Determine your Resource Needs: how-to-guides/determine-your-resource-needs.md
   - VIBE Applications:
     - Overview: vibe-applications/overview.md
-  - Workflows:
-  - Examples:
+#  - Workflows:
+#  - Examples:
   - In-Depth Explanations:
     - Launching Applications from the Terminal: in-depth-explanations/launching-applications-from-the-terminal.md 
-  - Contact:
+#  - Contact:
 
 # Configuration
 theme:
