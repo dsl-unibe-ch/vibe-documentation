@@ -9,8 +9,13 @@ The structure of the repo
 
 /
 |- docs
-   |- workflows
-   |
-   |
-   |
-   |
+   |- index.md
+   |- img: Folder to store images in
+   |- stylesheets: Folder for the styling .css
+   |- getting-started: Introduction articles for new users
+   |- how-to-guides: Detailed guides
+   |- vibe-applications: Collection of the README.md from all VIBE application containers
+   |- workflows: Detailed guides for selected workflows
+   |- examples: Detailed examples for selected applications
+   |- in-depth-explanations: Technical documentation for advanced users
+   |_ contact: Contact informations
