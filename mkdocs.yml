@@ -34,7 +34,7 @@ extra_css:
 plugins:
   - git-revision-date
   - search
-  - literate-nav
+  - literate-nav:
       nav_file: SUMMARY.md
 
 # See https://python-markdown.github.io/extensions/ and
