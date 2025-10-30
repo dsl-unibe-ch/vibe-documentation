@@ -20,7 +20,7 @@ jobs:
       - name: Create the vibe-documentation/docs/vibe-applications/container/ folder
         run: mkdir -p ./vibe-documentation/docs/vibe-applications/container/
       - name: Copy the container readme files
-        run: for file in $(find ./vibe-applications/*/* -iname README.md); do container_name=$(dirname $file | cut -d '/' -f4); cp $file ./vibe-documentation/docs/vibe-applications/container/$container_name.md && echo "[$container_name]($container_name.md)" >> ./vibe-documentation/docs/vibe-applications/container/SUMMARY.md; done
+        run: for file in $(find ./vibe-applications/*/* -iname README.md); do container_name=$(dirname $file | cut -d '/' -f4); cp $file ./vibe-documentation/docs/vibe-applications/container/$container_name.md && echo "* [$container_name]($container_name.md)" >> ./vibe-documentation/docs/vibe-applications/container/SUMMARY.md; done
       - name: Setup the python environment
         uses: actions/setup-python@v5
         with:
