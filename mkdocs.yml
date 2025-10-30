@@ -17,7 +17,7 @@ nav:
     - Determine your Resource Needs: how-to-guides/determine-your-resource-needs.md
   - VIBE Applications:
     - Overview: vibe-applications/overview.md
-    - Container: container-readme/
+    - Container: vibe-applications/container-readme/ 
 #  - Workflows:
 #  - Examples:
   - In-Depth Explanations:
