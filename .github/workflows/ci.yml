@@ -14,19 +14,18 @@ jobs:
       - name: Checkout the vibe-application repo
         uses: actions/checkout@v4
         with:
-          repository: dsl-unibe-ch/vibe-applications
+          repository: dsl-unibe-ch/vibe-applications-dev
           path: ./vibe-applications
+          token: ${{ secrets.VIBE_APPLICATION_DEV_TOKEN }}
       - name: Copy the container readme files
         run: for file in $(find ./vibe-applications/*/* -iname README.md); do container_name=$(dirname $file | cut -d '/' -f4); cp $file ./vibe-documentation/docs/vibe-applications/container-readme/$container_name.md && echo "[$container_name]($container_name.md)" >> ./vibe-documentation/docs/vibe-applications/container-readme/SUMMARY.md; done
       - name: Setup the python environment
         uses: actions/setup-python@v5
         with:
           python-version: 3.x
-      - name: Change into vibe-documentation directory
-        run: cd vibe-documentation/
       - name: Install mkdocs material theme
-        run: pip install mkdocs-material
+        run: cd vibe-documentation/ && pip install mkdocs-material
       - name: Install required mkdocs plugin 
-        run: pip install mkdocs-git-revision-date-plugin mkdocs-literate-nav
+        run: cd vibe-documentation/ && pip install mkdocs-git-revision-date-plugin mkdocs-literate-nav
       - name: Run the deployment
-        run: mkdocs gh-deploy --force
+        run: cd vibe-documentation/ && mkdocs gh-deploy --force
