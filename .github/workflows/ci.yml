@@ -11,12 +11,14 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: ./vibe-documentation
-      - name: Checkout the vibe-application repo
+      - name: Checkout the vibe-applications-dev repo
         uses: actions/checkout@v4
         with:
           repository: dsl-unibe-ch/vibe-applications-dev
           path: ./vibe-applications
           token: ${{ secrets.VIBE_APPLICATION_DEV_TOKEN }}
+      - name: Create the vibe-documentation/docs/vibe-applications/container-readme/ folder
+        run: mkdir -p ./vibe-documentation/docs/vibe-applications/container-readme/
       - name: Copy the container readme files
         run: for file in $(find ./vibe-applications/*/* -iname README.md); do container_name=$(dirname $file | cut -d '/' -f4); cp $file ./vibe-documentation/docs/vibe-applications/container-readme/$container_name.md && echo "[$container_name]($container_name.md)" >> ./vibe-documentation/docs/vibe-applications/container-readme/SUMMARY.md; done
       - name: Setup the python environment
