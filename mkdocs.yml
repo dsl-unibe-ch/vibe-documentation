@@ -17,6 +17,7 @@ nav:
     - Determine your Resource Needs: how-to-guides/determine-your-resource-needs.md
   - VIBE Applications:
     - Overview: vibe-applications/overview.md
+    - Container: container-readme/
 #  - Workflows:
 #  - Examples:
   - In-Depth Explanations:
@@ -33,6 +34,7 @@ extra_css:
 plugins:
   - git-revision-date
   - search
+  - literate-nav
 
 # See https://python-markdown.github.io/extensions/ and
 # See https://github.com/Python-Markdown/markdown/wiki/Third-Party-Extensions#Bundles
