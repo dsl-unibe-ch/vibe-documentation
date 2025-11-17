@@ -10,7 +10,7 @@ edit_uri: 'edit/main/docs'
 use_directory_urls: false
 nav:
   - The VIBE Platform:
-    - General Description: the-vibe-platform/general-description.md
+    - Overview: the-vibe-platform/general-description.md
   - Getting Started:
     - Getting an UBELIX Account: getting-started/getting-an-ubelix-account.md
   - How-To Guides:
