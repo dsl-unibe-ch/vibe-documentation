@@ -18,11 +18,13 @@ nav:
   - VIBE Applications:
     - Overview: vibe-applications/overview.md
     - Container: vibe-applications/container/ 
-#  - Workflows:
-#  - Examples:
+  - Workflows:
+    - Workflow 1: workflows/workflow_1.md
+  - Examples:
+    - Example 1: examples/example_1.md
   - In-Depth Explanations:
     - Launching Applications from the Terminal: in-depth-explanations/launching-applications-from-the-terminal.md 
-#  - Contact:
+  - Get in touch: contact.md
 
 # Configuration
 theme:
