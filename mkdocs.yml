@@ -19,7 +19,7 @@ nav:
     - Overview: vibe-applications/overview.md
     - Container: vibe-applications/container/ 
   - Workflows:
-    - Workflow 1: workflows/workflow_1.md
+    - Overview: workflows/workflow_overview.md
   - Examples:
     - Example 1: examples/example_1.md
   - In-Depth Explanations:
