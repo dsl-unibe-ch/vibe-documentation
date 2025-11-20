@@ -8,5 +8,16 @@ The VIBE desktop is the virtual platform for advanced and interactive image anal
 
 The VIBE desktop uses [https://ondemand.hpc.unibe.ch](https://ondemand.hpc.unibe.ch).
 
+
+
 !!! warning 
-    This is currently work in progress. Expect errors and outages.desktop-terminal-shortcut.png
+    This is currently work in progress. Expect errors and outages.
+
+
+NOTE: Here I plan to add a short video visually atractive displaying several task/application, for example: 3d rendering, segmentation, deconvolution, tracking, etc
+
+# VIBE
+
+The interactive platform for advance interactive image Analysis
+
+![VIBE_overview_demo](assets/videos/VIBE_overview_video_demo_2x_15fps.gif)
