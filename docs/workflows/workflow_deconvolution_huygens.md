@@ -5,7 +5,9 @@
 
 ## Intro
 Description what we want to achieve, what the dataset consist and what operations and tools we use. (TO BE DONE)
-- **Login** In order to use Huygens remote manager, you need have an active license. If you have a license and an active account, please introduce it in this step. If you need one license or want to test Huygens for restauration and deconvolution of your image dataset, please get in touch with the [MIC](https://www.mic.unibe.ch/) for support or [Yury Belyaev](mailto:info.mic@unibe.ch). After login, Huygens will check your system and if it finds a GPU it will need a few minutes to initialize the cards.
+
+## Login
+In order to use Huygens remote manager, you need have an active license. If you have a license and an active account, please introduce it in this step. If you need one license or want to test Huygens for restauration and deconvolution of your image dataset, please get in touch with the [MIC](https://www.mic.unibe.ch/) for support or [Yury Belyaev](mailto:info.mic@unibe.ch). After login, Huygens will check your system and if it finds a GPU it will need a few minutes to initialize the cards.
 
 ![huygens_full_workflow](../assets/images/huygens_login_screenshot.png) 
 
@@ -39,7 +41,7 @@ We can explore further the resulting image via 3D visualization. In the main win
 The complete workflow can be visualized here:
 
 
-![huygens_full_workflow](../assets/videos/huygens_full_workshop.webm)
+![huygens_full_workflow_video](../assets/videos/huygens_full_workshop.webm)
 
 
 ### Acknowledgment
