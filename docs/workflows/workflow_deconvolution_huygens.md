@@ -41,7 +41,7 @@ We can explore further the resulting image via 3D visualization. In the main win
 The complete workflow can be visualized here:
 
 
-![huygens_full_workflow_video](../assets/videos/huygens_full_workshop.webm)
+![huygens_full_workflow_video](../assets/videos/huygens_workflow_video.webm)
 
 
 ### Acknowledgment
