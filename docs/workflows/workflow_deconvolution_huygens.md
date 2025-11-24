@@ -39,7 +39,7 @@ We can explore further the resulting image via 3D visualization. In the main win
 The complete workflow can be visualized here:
 
 
-![huygens_full_workflow](../assets/videos/Screen%20Recording%202025-11-24%20at%2010.36.09.webm)
+![huygens_full_workflow](../assets/videos/huygens_full_workshop.webm)
 
 
 ### Acknowledgment
