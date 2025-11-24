@@ -20,4 +20,4 @@ NOTE: Here I plan to add a short video visually atractive displaying several tas
 
 The interactive platform for advance interactive image Analysis
 
-![VIBE_overview_demo](assets/videos/VIBE_overview_video_demo_2x_15fps.gif)
+![VIBE_overview_demo](assets/videos/VIBE_overview_video_demo_2x_60fps.webm)
