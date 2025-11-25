@@ -42,15 +42,10 @@ We can explore further the resulting image via 3D visualization. In the main win
 
 The complete workflow from beginning to end can be visualized here:
 
-![huygens_full_workflow_video](../assets/videos/huygens_workflow_video.gif)
-
 <video controls>
  <source src="../assets/videos/huygens_workflow_video.mp4" type="video/mp4">
 </video>
 
-<video controls>
- <source src="../assets/videos/huygens_workflow_video.webm" type="video/webm">
-</video>
 
 ### Acknowledgment
 
