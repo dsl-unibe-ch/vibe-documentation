@@ -14,10 +14,10 @@ The VIBE desktop uses [https://ondemand.hpc.unibe.ch](https://ondemand.hpc.unibe
     This is currently work in progress. Expect errors and outages.
 
 
-NOTE: Here I plan to add a short video visually atractive displaying several task/application, for example: 3d rendering, segmentation, deconvolution, tracking, etc
+NOTE: Here I plan to add a short video visually attractive displaying several task/application, for example: 3d rendering, segmentation, deconvolution, tracking, etc
 
 # VIBE
 
 The interactive platform for advance interactive image Analysis
 
-![VIBE_overview_demo](assets/videos/VIBE_overview_video_demo_2x_60fps.webm)
+![VIBE_overview_demo](assets/videos/VIBE_overview_video_demo_2x_15fps.gif)
