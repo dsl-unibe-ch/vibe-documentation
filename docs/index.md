@@ -20,4 +20,6 @@ NOTE: Here I plan to add a short video visually attractive displaying several ta
 
 The interactive platform for advance interactive image Analysis
 
-![VIBE_overview_demo](assets/videos/VIBE_overview_video_demo_2x_15fps.gif)
+<video controls loop autoplay muted>
+ <source src="assets/videos/VIBE_overview_video_demo_2x_60fps.webm" type="video/webm">
+</video>
