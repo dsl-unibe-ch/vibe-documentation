@@ -44,7 +44,7 @@ We can explore further the resulting image via 3D visualization. In the main win
 
 The complete workflow from beginning to end can be visualized here:
 
-<video controls>
+<video controls loop muted autoplay>
  <source src="../assets/videos/huygens_workflow_video.mp4" type="video/mp4">
 </video>
 
