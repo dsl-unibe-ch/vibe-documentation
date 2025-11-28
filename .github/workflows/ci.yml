@@ -32,6 +32,6 @@ jobs:
       - name: Install mkdocs material theme
         run: cd vibe-documentation/ && pip install mkdocs-material
       - name: Install required mkdocs plugin 
-        run: cd vibe-documentation/ && pip install mkdocs-git-revision-date-plugin mkdocs-literate-nav
+        run: cd vibe-documentation/ && pip install mkdocs-git-revision-date-localized-plugin mkdocs-literate-nav
       - name: Run the deployment
         run: cd vibe-documentation/ && mkdocs gh-deploy --force
