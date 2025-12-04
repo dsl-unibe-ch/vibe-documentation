@@ -20,12 +20,11 @@ nav:
   - VIBE Applications:
     - Overview: vibe-applications/overview.md
     - Container: vibe-applications/container/ 
-  - Workflows:
-    - Overview: workflows/workflow_overview.md
-    - Cell segmentation and tracking: workflows/workflow_cell_tracking.md
-    - Deconvolution with Huygens Pro: workflows/workflow_deconvolution_huygens.md
   - Examples:
-    - Example 1: examples/example_1.md
+    - Overview: examples/examples_overview.md
+    - Cell segmentation and tracking with MicroSAM, Fiji and TrackMate: examples/examples_cell_tracking.md
+    - Deconvolution with Huygens: examples/examples_deconvolution_huygens.md
+    - Deconvolution with Huygens Pro: workflows/workflow_deconvolution_huygens.md
   - In-Depth Explanations:
     - Launching Applications from the Terminal: in-depth-explanations/launching-applications-from-the-terminal.md 
   - Get in touch: contact.md
@@ -38,7 +37,8 @@ extra_css:
   - 'stylesheets/unibe.css'
 
 plugins:
-  - git-revision-date
+  - git-revision-date-localized:
+      enable_creation_date: true
   - search
   - literate-nav:
       nav_file: SUMMARY.md
