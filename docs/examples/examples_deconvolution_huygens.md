@@ -2,7 +2,7 @@
 
 ## Overview
  
-In this tutorial we will show you how to restore an image using deconvolution methods with the commercial tool [Huygens Profesional](https://svi.nl/Huygens-Professional) from Scientific Volume Imaging ([SVI](https://svi.nl/HomePage)). As dataset, we will be using a 3D stack image example that consist of Actin filaments of HeLa cell stained with a fluorescent probe and acquired with a confocal microscopy. This dataset has kindly being provided by Dr. Diego Morone from the Università della Svizzera italiana.
+In this tutorial we will show you how to restore an image using deconvolution methods with the commercial tool [Huygens Profesional](https://svi.nl/Huygens-Professional) from Scientific Volume Imaging ([SVI](https://svi.nl/HomePage)). As dataset, we will be using a 3D stack image example that consist of Actin filaments of HeLa cell stained with a fluorescent probe and acquired with a confocal microscopy. This dataset[^1] was provided by Dr. Diego Morone from the Università della Svizzera Italiana.
 
 
 ## Login
@@ -53,3 +53,7 @@ The complete workflow from beginning to end can be visualized here:
 
 - Dr. Yury Beliaev: For his valuable technical expertise on image restoration and deconvolution.
 - Dr. Diego Morone: For kindly providing the dataset.
+
+
+
+[^1]: Morone, D. (2025). Test sample for deconvolution benchmarking [Data set]. Zenodo. [https://doi.org/10.5281/zenodo.17736039](https://doi.org/10.5281/zenodo.17736039)
