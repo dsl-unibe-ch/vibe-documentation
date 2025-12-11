@@ -21,7 +21,7 @@ nav:
     - Container: vibe-applications/container/ 
   - Examples:
     - Overview: examples/examples_overview.md
-    - Cell segmentation and tracking with MicroSAM, Fiji and TrackMate: examples/examples_cell_tracking.md
+    - Segment and track with MicroSAM and TrackMate: examples/examples_cell_tracking.md
     - Deconvolution with Huygens: examples/examples_deconvolution_huygens.md
   - In-Depth Explanations:
     - Launching Applications from the Terminal: in-depth-explanations/launching-applications-from-the-terminal.md 
