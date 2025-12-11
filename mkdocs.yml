@@ -23,7 +23,6 @@ nav:
     - Overview: examples/examples_overview.md
     - Cell segmentation and tracking with MicroSAM, Fiji and TrackMate: examples/examples_cell_tracking.md
     - Deconvolution with Huygens: examples/examples_deconvolution_huygens.md
-    - Deconvolution with Huygens Pro: workflows/workflow_deconvolution_huygens.md
   - In-Depth Explanations:
     - Launching Applications from the Terminal: in-depth-explanations/launching-applications-from-the-terminal.md 
   - Get in touch: contact.md
