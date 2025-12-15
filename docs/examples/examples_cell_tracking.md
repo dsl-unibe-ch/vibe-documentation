@@ -2,17 +2,30 @@
 
 ## Overview
 
-In this example we will be showing how to use **microSAM**[^1] with napari in combination with **Trackmate**[^2] Fiji plugin to track cell migration. The dataset consist of fluorescent images of MDA-MB-231 cells expressing and labeled against ERK activity and live recorded using a widefield fluorescence microscope[^3].
+In this example, we demonstrate how to use **microSAM**[^1] with napari in combination with the **TrackMate**[^2] Fiji plugin to track cell migration. The dataset consists of time-lapse fluorescence images of MDA-MB-231 cells expressing an ERK activity reporter, acquired using a widefield fluorescence microscope[^3].
 
-## **open and visualize** 
-dataset -> Napari (base)
-## **split channels** 
-and save them in separate files -> Fiji
-## reopen the channel containing the cell nucleus staining (DAPI) with **Napari micro-SAM**
+We use the DAPI staining channel as a reference for cell tracking. microSAM is employed to segment the cell nuclei, and the resulting labeled nuclei are subsequently used as input for tracking cell trajectories with TrackMate in Fiji. Between these steps, several preprocessing operations are performed, including splitting and merging image channels.
+
+
+## **Visualize and split the channels** 
+dataset -> use fiji
+
+## Segment nuclei with micro-SAM
+
 ## Adjust the setting for **automatic segmentation.**
+
 ## **segment** the cells.
-## **save the resulting mask** (annotation) as an image
-## in fiji, **merge the resulting mask** with the original 2 channels image .
+
+## **export the resulting mask** (annotation) as an image
+
+## in fiji, **merge the resulting mask** with the original 2 channels image
+
+## Track cells with trackmate
+
+## adjust trackmate settings
+
+## visualize results
+
 - 
 
 ### Acknowledge
