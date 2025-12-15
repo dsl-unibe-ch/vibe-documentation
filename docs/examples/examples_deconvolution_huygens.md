@@ -2,11 +2,13 @@
 
 ## Overview
  
-In this tutorial we will show you how to restore an image using deconvolution methods with the commercial tool [Huygens Profesional](https://svi.nl/Huygens-Professional) from Scientific Volume Imaging ([SVI](https://svi.nl/HomePage)). As dataset, we will be using a 3D stack image example that consist of Actin filaments of HeLa cell stained with a fluorescent probe and acquired with a confocal microscopy. This dataset has kindly being provided by Dr. Diego Morone from the Università della Svizzera italiana.
+In this tutorial we will show you how to restore an image using deconvolution methods with the commercial tool [Huygens Profesional](https://svi.nl/Huygens-Professional) from Scientific Volume Imaging ([SVI](https://svi.nl/HomePage)). As dataset, we will be using a 3D stack image example that consist of Actin filaments of HeLa cell stained with a fluorescent probe and acquired with a confocal microscopy. This dataset[^1] was provided by Dr. Diego Morone from the Università della Svizzera Italiana.
 
 
 ## Login
-In order to use Huygens remote manager, you need to have a valid license. If you have a license and an active account, please introduce it in this step. If you need one license or want to test Huygens for restoration and deconvolution of your image dataset, please get in touch with the [MIC](https://www.mic.unibe.ch/) for support or [Yury Belyaev](mailto:info.mic@unibe.ch). After login, Huygens will check your system and if it finds a GPU it will need a few minutes to initialize the cards.
+In order to use Huygens remote manager, you need to have a valid license. Please get in touch with the [MIC](https://www.mic.unibe.ch/) for support or [Yury Belyaev](mailto:info.mic@unibe.ch) for the license.
+
+ After login, Huygens will check your system and if it finds a GPU it will need a few minutes to initialize the graphic cards.
 
 ![huygens_full_workflow](../assets/images/huygens_login_screenshot.png) 
 
@@ -14,7 +16,7 @@ In order to use Huygens remote manager, you need to have a valid license. If you
 VIBE, as a service hosted by UBELIX, uses similar [data storage scheme](https://hpc-unibe-ch.github.io/storage/) and offers connectivity for their user to the Research Storage by default. Read more about [data transfer and storage documentation](../how-to-guides/data-management.md) or get in touch with the [ Dienstleistungen der Informatikdienste](https://intern.unibe.ch/dienstleistungen/informatik/dienstleistungen_der_informatikdienste/dienstleistungen___ressourcen/research_storage/index_ger.html) to request a Research Storage quota for your project. 
 
 
-The dataset that we are going to use for this workflow is currently living somewhere at the `$HOME` directory of the current UBELIX session in use. Let's open the dataset by just drag and drop our image to the main application windows. Huygens is a very versatile software with a wide range of functionalities that won't be covered in this workflow. Feel free to look at the official documentation and watch the multiples tutorials and learning material in the [SVI website](https://svi.nl/HomePage). 
+The dataset that we are going to use for this workflow is currently living somewhere at the `$HOME` directory of the current UBELIX session in use. Let's open the dataset by just drag and drop our image to the main application windows. Huygens is a very versatile software with a wide range of functionalities that won't be covered in this workflow. Feel free to look at the official documentation, tutorials and learning material in the [SVI website](https://svi.nl/Manuals). 
 
 ![open_dataset](../assets/images/huygens_open_dataset.png)
 
@@ -36,7 +38,7 @@ Once finished, the deconvolution wizard will display the resulting deconvolved i
 
 
 ## 3D visualization
-We can explore further the resulting image via 3D visualization. In the main window, select the two images and click on the tab "Visualization". Go to "Visualization 3D" and select "Twint MIP". This will display the [maximum intensity projection](https://svi.nl/MaxIntensityProjection) (MIP) of the two images in a new window. Sync the vies and readjust contrast or any other parameter to inspect in detail your image. 
+We can explore further the resulting image via 3D visualization. In the main window, select the two images and click on the tab "Visualization". Go to "Visualization 3D" and select "Twin MIP". This will display the [maximum intensity projection](https://svi.nl/MaxIntensityProjection) (MIP) of the two images in a new window. Sync the vies and readjust contrast or any other parameter to inspect in detail your image. 
 
 ![32_visualization](../assets/images/huygens_3d_visulization.png)
 
@@ -53,3 +55,7 @@ The complete workflow from beginning to end can be visualized here:
 
 - Dr. Yury Beliaev: For his valuable technical expertise on image restoration and deconvolution.
 - Dr. Diego Morone: For kindly providing the dataset.
+
+
+
+[^1]: Morone, D. (2025). Test sample for deconvolution benchmarking [Data set]. Zenodo. [https://doi.org/10.5281/zenodo.17736039](https://doi.org/10.5281/zenodo.17736039)
