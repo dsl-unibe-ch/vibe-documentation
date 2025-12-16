@@ -61,14 +61,17 @@ To use the VIBE desktop you are required to:
         - A100
         - H100
         - H200
-    * **Instance size**: This define the amount of resources in terms of CPU (number of cores) and RAM for your session. There exist default configurations. However you can also create an instance with custom configuration if you need a different configuration of hardware for your application. Make sure you don not exceed the maximum hardware configuration define by UBElIX. Read more on what type of configurations are allowed in the [UBELIX documentation on resources selection](https://hpc-unibe-ch.github.io/hardware/gpu/#cpu-memory)
+    * **Instance size**: This define the amount of resources in terms of CPU (number of cores) and RAM for your session. There exist three default configurations: 
         - Small: 4 cores, 8GB RAM
         - Medium: 32 cores, 32GB RAM
         - Large:16 cores, 64GB RAM
         - Custom
+
+        However, you can also create an instance with custom configuration of hardware for your application. Read more on what type of configurations are allowed in the [UBELIX documentation on resources selection](https://hpc-unibe-ch.github.io/hardware/gpu/#cpu-memory).
+
     * **Number of Nodes**: In case you need more than one node for your computation.
 
-    * **Email on start**: May your session be in the queue for a period of time and you would like to be notified when start. YOu amy introduce in this filed a valid email address to receive notification when your session has being launched.
+    * **Email on start**: May your session be in the queue for a period of time and be notified when start. Introduce in this filed a valid email address and you will receive a notification when your session is being initialized.
 
 
 
