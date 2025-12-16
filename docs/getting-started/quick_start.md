@@ -13,11 +13,10 @@ Outline:
 - [x] Requirements
 - [x] Defining your system configuration
     - [x] describe the form and its parameters
-- [ ] launching the desktop
-- [ ] interacting with the VIBE desktop, check properties, menu, navigate the file system, look up at the research storage
-- [ ] launching an application
-- [ ] Opening an image
-- [ ] Closing your session
+- [x] launching the desktop
+- [x] interacting with the VIBE desktop, check properties, menu, navigate the file system, look up at the research storage, open an image
+- [x] launching an application
+- [x] Closing your session
 
 ## What do you need?
 
@@ -73,8 +72,33 @@ To use the VIBE desktop you are required to:
 
     * **Email on start**: May your session be in the queue for a period of time and be notified when start. Introduce in this filed a valid email address and you will receive a notification when your session is being initialized.
 
+## Launching the desktop
+
+Once you have define the resources and time for your VIBE desktop, click on the button Launch. The desktop may take few minutes to launch depending on the current usage. Adjust the compression and image quality and click on the button "Launch VIBE desktop". A new window in your browser will be open displaying the VIBE desktop.
+
+!!! note 
+    Show the "launch the VIBE desktop" form.
 
 
+## Interact with VIBE
+
+VIBE behave as an usual desktop in a linux environment. You can browse files, open files and navigate the internet. However, the power of VIBE relies in its dedicated applications for Bioimage analysis already preinstalled and ready to use. In addition, VIBE has an integrated terminal emulator where more advanced users can script and run commands via the command line.
+
+!!! note 
+    show  screenshot showing the VIBE desktop menu, etc
+
+VIBE, as a service attached to the UBELIX cluster, is connected directly to the Research storage. You can explore your research storage folder and open dataset from there.
+
+Let's open an example image and visualize it in napari for instance.
+
+
+
+## Closing your session
+
+There exist few ways to close your VIBE session.
+1. Via the **VIBE graphical user interface**. Go to the menu bar and click on Applications -> Log out. A new window will appears prompting you to leave log out. click "Log Out". Leave the "Save session fo future logins" if you want to reopen the last applications used in your next session. 
+2. Via **"My Interactive sessions"** in OpenOndemand: Go to "My interactive Sessions" in the main tab of OpenOndemand and just click on the red delete button that monitors your live session. 
+3. Via the **Jobs manager tool** in OpenOndemand: Go to Jobs on the main window and click on "Active Jobs". There you will see all the job you are currently running. Identify the job that runs the VIBE desktop either by the name <vibe-desktop-dev> or by the job ID. To stop your job click on the red trash can button located at the right end of the entry under the "Actions" column 
 
 
 ## Full video
