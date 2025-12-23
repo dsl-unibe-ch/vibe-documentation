@@ -58,7 +58,10 @@ Additionally, VIBE includes an integrated terminal emulator, which allows more a
 
 Since VIBE is connected directly to the UBELIX cluster, you have seamless access to research storage. You can easily browse your research files and open datasets directly within the desktop environment.
 
-For example, let’s open a sample image and visualize it using **Napari**, a popular tool for bio-image analysis.
+You can for instance, open a sample image from the research storage and visualize it using **Napari**, a popular tool for bio-image analysis.
+
+!!! note "Note for me"
+    *add screenshot of an open image using napari*
 
 ## Closing Your Session
 
