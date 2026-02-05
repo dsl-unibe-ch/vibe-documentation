@@ -12,9 +12,7 @@ nav:
   - The VIBE Platform:
     - Overview: the-vibe-platform/general-description.md
   - Getting Started:
-    - Getting an UBELIX Account: getting-started/getting-an-ubelix-account.md
     - Quick start: getting-started/quick_start.md
-    - VIBE system configuration: getting-started/vibe_configuration_form.md
   - How-To Guides:
     - Determine your Resource Needs: how-to-guides/determine-your-resource-needs.md
     - Data Management: how-to-guides/data-management.md
@@ -26,6 +24,7 @@ nav:
     - Segment and track with MicroSAM and TrackMate: examples/examples_cell_tracking.md
     - Deconvolution with Huygens: examples/examples_deconvolution_huygens.md
   - In-Depth Explanations:
+    - VIBE system configuration: in-depth-explanations/vibe_configuration_form.md
     - Launching Applications from the Terminal: in-depth-explanations/launching-applications-from-the-terminal.md 
   - Get in touch: contact.md
 
