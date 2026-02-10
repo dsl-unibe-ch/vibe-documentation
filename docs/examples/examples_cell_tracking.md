@@ -11,8 +11,7 @@ We use the DAPI staining channel as a reference for cell tracking. microSAM is e
 
 We will launch the standard Fiji program to visualize and split the channels of the image. Go to the Applications menu on the top left of the window and navigate to **VIBE -> VIBE applications -> fiji** and click on the Fiji-base application. this will launch the application. A terminal window will show that the launching of the application is in process. Wait few seconds until the Application GUI appears. 
 
-!!! note
-    place screenshot of application menu, highlighting Fiji location
+![huygens_full_workflow](../assets/images/fiji_menu.png) 
 
 The image that we are going to use is in a folder located at the desktop of the current session in use. Drag and drop the image to visualize it in Fiji.
 
@@ -32,15 +31,15 @@ We will open the DAPI channel with napari and use the napari-microSAM plugin to 
 !!! note
     place screenshot/video of setting being adjusted in microSAM.
 
-## **export the resulting mask** (annotation) as an image
-
-## in fiji, **merge the resulting mask** with the original 2 channels image
+## Export labels (annotation) as an image
+MicroSAM is a powerfull and flexible software  
+## Merge labels with the image
 
 ## Track cells with trackmate
 
-## adjust trackmate settings
+## Adjust trackmate settings
 
-## visualize results
+## Visualize results
 
 ## Full workflow
 
