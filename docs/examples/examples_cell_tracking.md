@@ -7,14 +7,30 @@ In this example, we demonstrate how to use **microSAM**[^1] with napari in combi
 We use the DAPI staining channel as a reference for cell tracking. microSAM is employed to segment the cell nuclei, and the resulting labeled nuclei are subsequently used as input for tracking cell trajectories with TrackMate in Fiji. Between these steps, several preprocessing operations are performed, including splitting and merging image channels.
 
 
-## **Visualize and split the channels** 
-dataset -> use fiji
+## Visualize and split channels
 
-## Segment nuclei with micro-SAM
+We will launch the standard Fiji program to visualize and split the channels of the image. Go to the Applications menu on the top left of the window and navigate to **VIBE -> VIBE applications -> fiji** and click on the Fiji-base application. this will launch the application. A terminal window will show that the launching of the application is in process. Wait few seconds until the Application GUI appears. 
 
-## Adjust the setting for **automatic segmentation.**
+!!! note
+    place screenshot of application menu, highlighting Fiji location
 
-## **segment** the cells.
+The image that we are going to use is in a folder located at the desktop of the current session in use. Drag and drop the image to visualize it in Fiji.
+
+!!! note
+    place screenshot/video of the raw image displaying cell in motion.
+
+In Fiji, go to **Image -> Colors -> Split Channels** to separate each of the two channels of the image and save them.
+
+
+## Launch napari and micro-SAM
+
+We will open the DAPI channel with napari and use the napari-microSAM plugin to segment the nuclei. Let's find Napari by navigating again the applications menu on **VIBE -> VIBE applications -> napari** and click on **napari-microSAM-1.6.2**. Open the second  image that contains the stained nuclei (DAPI) and launch the plugin by going to **Plugins -> Segment anything for Microscopy -> Annotator 3D**.
+
+
+## Adjust setting and segment the cells.
+
+!!! note
+    place screenshot/video of setting being adjusted in microSAM.
 
 ## **export the resulting mask** (annotation) as an image
 
@@ -26,7 +42,15 @@ dataset -> use fiji
 
 ## visualize results
 
-- 
+## Full workflow
+
+The complete workflow from beginning to end can be visualized here:
+
+<video controls loop muted autoplay>
+ <source src="../assets/videos/usam_trackmate_tutorial_60fps_crf55.webm" type="video/webm">
+</video>
+
+
 
 ### Acknowledge
 
