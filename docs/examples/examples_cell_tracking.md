@@ -75,7 +75,19 @@ Navigate the Trackmate wizard to adjust the settings for basic object tracking.
 
 ## Visualize results
 
+What we observe above are the trajectories linked to each ROI that has been detected and tracked based on our simple parameters. The color represent the index of the tracks. Noted that despite having a pretty descent detection and tracking results with the default settings, this results can be further tuned by applying filters, using a different tracker algorithm, adjusting the linking distance. However, this goues beyound the scope of this demostration and for the propose of this demonstration this should suffice. 
 
+As a last step, lets try to adjust the visualization of the tracks by adjusting the draw tracks layout. This will help to visualoze less corwed draws and focus better on the trajectories of single spots or cells.
+
+- In the present window, select "edit settings". 
+- In the "Track" section go to "track display mode" and select the option "show tracks backward in time".
+- Optionally, you can change the "track display max", which will result in the length of the draw track display in the animation. in this case is 10 time-points length distance. Close the windows and click next.
+- Select the option "Capture overlay" to create a new image with the track overlay on the original image with the current display settings.
+- Click "Execute" and accept the options. A new image will be created that capture the draw tracks. You can export this image for presentation, etc.
+
+<video controls loop muted autoplay>
+ <source src="../assets/videos/visualize_tracks.webm" type="video/webm">
+</video>
 
 ## Full workflow
 
