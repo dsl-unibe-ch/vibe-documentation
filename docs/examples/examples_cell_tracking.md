@@ -6,6 +6,7 @@ In this example, we demonstrate how to use **microSAM**[^1] in napari in combina
 
 We use the DAPI staining channel as a reference for cell tracking. microSAM is used to segment the cell nuclei, and the resulting labeled nuclei are then used as input for tracking cell trajectories with TrackMate in Fiji. Between these steps, several preprocessing operations are performed, including splitting and merging image channels.
 
+If you want to skip the tutorial and just look at the full demostration video, feel free to jump to the [Full Workflow](#full-workflow) section.
 
 ## Visualize and Split Channels
 

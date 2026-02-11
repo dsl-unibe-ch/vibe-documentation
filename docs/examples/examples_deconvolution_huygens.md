@@ -4,6 +4,8 @@
  
 In this tutorial we will show you how to restore an image using deconvolution methods with the commercial tool [Huygens Professional](https://svi.nl/Huygens-Professional) from Scientific Volume Imaging ([SVI](https://svi.nl/HomePage)). As dataset, we will be using a 3D stack image example that consist of Actin filaments of HeLa cell stained with a fluorescent probe and acquired with a confocal microscopy. This dataset[^1] was provided by Dr. Diego Morone from the Università della Svizzera Italiana.
 
+If you want to skip the tutorial and just look at the full demostration video, feel free to jump to the [Full Workflow](#full-workflow) section.
+
 
 ## Login
 In order to use Huygens remote manager, you need to have a valid license. Please get in touch with the [MIC](https://www.mic.unibe.ch/) for support or [Yury Belyaev](mailto:info.mic@unibe.ch) for the license.
