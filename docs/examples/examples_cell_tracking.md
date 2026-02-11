@@ -56,9 +56,26 @@ From Fiji, combine the three images by navigating to **Image -> Color -> Merge C
 
 ## Track cells with trackmate
 
+With our last image opened in Fiji, launch TrackMate by navigating to **Plugins -> Tracking -> TrackMate**.
+
+![](../assets/images/trackmate_in_fiji.png)
+
 ## Adjust trackmate settings
 
+Navigate the Trackmate wizard to adjust the settings for basic object tracking. 
+
+- TrackMate can read some metadata and adjust some images settings for you, for instance the calibration settings in this examples are taking by default from the image. 
+- click next and use "mask detector", then select the channel that contain the mask. In our case is the channel 3, which is already detected. Click pthe preview button to check the contours of the segmentation.
+- click next to see a first preview of the objects detected. 
+- click next and select the tracker. There are a number of trackers that you can potentially use. Let's use the default "LAP tracker" and continue to the next step.
+- in the LAP tracker settings, use the default 20 µm as a "frame to frame linking distance" and "track segment splitting" and click next.
+- the tracking lines for each object detected will appear now as displayed bellow.
+
+![](../assets/images/tracking_lines.png)
+
 ## Visualize results
+
+
 
 ## Full workflow
 
