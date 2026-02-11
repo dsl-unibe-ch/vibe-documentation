@@ -21,7 +21,7 @@ nav:
     - Container: vibe-applications/container/ 
   - Examples:
     - Overview: examples/examples_overview.md
-    - Segment and track with MicroSAM and TrackMate: examples/examples_cell_tracking.md
+    - Segment and track cells: examples/examples_cell_tracking.md
     - Deconvolution with Huygens: examples/examples_deconvolution_huygens.md
   - In-Depth Explanations:
     - VIBE system configuration: in-depth-explanations/vibe_configuration_form.md
