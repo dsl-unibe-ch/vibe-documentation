@@ -24,16 +24,32 @@ In Fiji, go to **Image -> Colors -> Split Channels** to separate each the channe
 
 ## Launch napari and micro-SAM
 
-Let's open napari and use the napari-microSAM plugin to segment the nuclei. Let's find Napari by navigating again the applications menu on **VIBE -> VIBE applications -> napari** and click on **napari-microSAM-1.6.2**. Open the second  image that contains the stained nuclei (DAPI) and launch the plugin by going to **Plugins -> Segment anything for Microscopy -> Annotator 3D**.
+Let's open napari and use the napari-microSAM plugin to segment the nuclei. Find Napari by navigating again the applications menu on **VIBE -> VIBE applications -> napari** and click on **napari-microSAM-1.6.2**. Open the second  image that contains the stained nuclei (DAPI) and launch the plugin by going to **Plugins -> Segment anything for Microscopy -> Annotator 3D**.
 
 
 ## Adjust setting and segment the cells.
 
-!!! note
-    place screenshot/video of setting being adjusted in microSAM.
+microSAM has number of settings that can be tuned for optimal segmentation. In addition, microSAM needs to compute image embeddings in order to make predictions. For our example we will use default settings, which yields to acceptable results for our example. Feel free to explore and experiment with further parameters for your own images and find deeper explanation on what are these parameters and how to use them in the official [microSAM documentation](https://computational-cell-analytics.github.io/micro-sam/micro_sam.html). 
+
+So let's dive slowly into the basic configuration needed to make our segmentation.
+
+- **Select the image layer you want ot segment**. In our case, is taken by default since is the only image we have open.
+- **Select the model "light Microscopy"**
+- **Compute embeddings**. Open the "Embeddings Settings" menu and adjust the settings as shown below accordingly.
+    - **Select model size: "base"**.
+    - **Select device: cuda.**
+    - **Click on "Compute Embeddings"**. Wait a few moments until the computations ends.
+
+![](../assets/images/microSAM_settings.png) 
+
+Once adjusted the basic settings, go to the menu for automatic segmentation and **select "apply to volume"** and finally **click on the "Automatic Segmentation"** button. This step may take few minutes to complete. You can follow the progress using the activity progress bar from napari at the button right corner of the window. 
+
+<video controls loop muted autoplay>
+ <source src="../assets/videos/segmentation_progress.webm" type="video/webm">
+</video>
 
 ## Export labels (annotation) as an image
-MicroSAM is a powerfull and flexible software  
+
 ## Merge labels with the image
 
 ## Track cells with trackmate
