@@ -145,8 +145,6 @@ The complete workflow from start to finish is shown below:
 </video>
 
 
-### Acknowledgments
-
 ### Resources 
 
 [^1]: Archit, A., Freckmann, L., Nair, S. et al. Segment Anything for Microscopy. Nat Methods 22, 579–591 (2025). https://doi.org/10.1038/s41592-024-02580-4  
