@@ -48,9 +48,11 @@ Once adjusted the basic settings, go to the menu for automatic segmentation and 
  <source src="../assets/videos/segmentation_progress.webm" type="video/webm">
 </video>
 
-## Export labels (annotation) as an image
+## Merge annotation label with the image
 
-## Merge labels with the image
+Save the layer "auto_segmentation". This image containing the mask with the segmentation of the cells that we are going to need for our next step using Trackmate. Use Fiji and open the individual channels previously saved as well as the mask with the labels generated using microSAM. 
+
+From Fiji, combine the three images by navigating to **Image -> Color -> Merge Channels** and saved it.
 
 ## Track cells with trackmate
 
