@@ -11,19 +11,20 @@ We use the DAPI staining channel as a reference for cell tracking. microSAM is e
 
 We will launch the standard Fiji program to visualize and split the channels of the image. Go to the Applications menu on the top left of the window and navigate to **VIBE -> VIBE applications -> fiji** and click on the Fiji-base application. this will launch the application. A terminal window will show that the launching of the application is in process. Wait few seconds until the Application GUI appears. 
 
-![huygens_full_workflow](../assets/images/fiji_menu.png) 
+![](../assets/images/fiji_menu.png) 
 
 The image that we are going to use is in a folder located at the desktop of the current session in use. Drag and drop the image to visualize it in Fiji.
 
-!!! note
-    place screenshot/video of the raw image displaying cell in motion.
+<video controls loop muted autoplay>
+ <source src="../assets/videos/display_cells_in_motion.webm" type="video/webm">
+</video>
 
-In Fiji, go to **Image -> Colors -> Split Channels** to separate each of the two channels of the image and save them.
+In Fiji, go to **Image -> Colors -> Split Channels** to separate each the channels. Save each channel separately. We will use in the next step the channel containing the nuclei staining for segmentation.
 
 
 ## Launch napari and micro-SAM
 
-We will open the DAPI channel with napari and use the napari-microSAM plugin to segment the nuclei. Let's find Napari by navigating again the applications menu on **VIBE -> VIBE applications -> napari** and click on **napari-microSAM-1.6.2**. Open the second  image that contains the stained nuclei (DAPI) and launch the plugin by going to **Plugins -> Segment anything for Microscopy -> Annotator 3D**.
+Let's open napari and use the napari-microSAM plugin to segment the nuclei. Let's find Napari by navigating again the applications menu on **VIBE -> VIBE applications -> napari** and click on **napari-microSAM-1.6.2**. Open the second  image that contains the stained nuclei (DAPI) and launch the plugin by going to **Plugins -> Segment anything for Microscopy -> Annotator 3D**.
 
 
 ## Adjust setting and segment the cells.
