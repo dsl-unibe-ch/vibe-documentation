@@ -4,7 +4,7 @@
     This is currently work in progress. Expect errors and outages.
 
 
-# User Documentation
+# Official VIBE user Documentation
 
 
 <video controls loop autoplay muted>
@@ -16,5 +16,5 @@ The VIBE desktop is the virtual platform for advanced and interactive image anal
 
 The VIBE desktop uses [https://ondemand.hpc.unibe.ch](https://ondemand.hpc.unibe.ch).
 
-
+Want to find out more? have a look at our list of [examples](examples/examples_overview.md).
 
