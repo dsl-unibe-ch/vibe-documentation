@@ -15,27 +15,25 @@ The remote desktop includes a curated collection of widely used open-source appl
 
 The VIBE platform is designed for:
 
-- Biologists who need an easy and interactive environment for visualization, segmentation and quantitative analysis.
+- Biologists who need an easy and interactive yet powerful environment for visualization, segmentation and quantitative analysis.
 
 - Imaging specialists who support users and develop advanced pipelines.
 
-- Students and trainees who require a unified workspace for learning bioimage analysis.
+- Students and trainees who require a unified and standardized workspace for learning bioimage analysis.
 
 - Computational scientists running Python/R workflows or deep-learning models.
 
 ## Key features
 
-- Fully Managed Remote Desktop: Access the entire environment via your web browser. No installation required. Works on Windows, Mac, and Linux
+- Fully Managed Remote Desktop: Access the entire environment via your web browser. No installation required. Works on Windows, Mac, and Linux.
 
-- Preinstalled Bioimage Analysis Tools: Fiji / ImageJ (with major plugins), Napari with visualization and analysis plugins, QuPath for histology and whole-slide imaging, CellProfiler for batch image processing, Ilastik for interactive segmentation, Python (JupyterLab).
+- Preinstalled Bioimage Analysis Tools: Fiji / ImageJ (with major plugins), Napari with visualization, segmentation and analysis plugins, QuPath for histology and whole-slide imaging, CellProfiler for batch image processing, Ilastik for interactive segmentation, Python (JupyterLab).
 
-- High-Performance Computing: Multi-core CPU nodes. Optional GPU-accelerated sessions for deep learning based segmentation. Large memory sessions for multi-GB image stacks. 
+- High-Performance Computing: Multi-core CPU nodes. Optional GPU-accelerated sessions for deep learning based segmentation. Large memory sessions for multi-GB image stacks.
 
 - Centralized Storage: Personal home folders. Project-based shared folders. Fast temporary scratch space. Direct integration with institutional storage systems (Research Storage).
 
-- Secure & Compliant: Encrypted connections. User-based permissions. Automatic backups of home folders. Project isolation for sensitive data.
-
-- Ready-to-Use Workflows: Cell segmentation pipelines. 3D volumetric analysis workflows. Whole-slide imaging pipelines. Machine learning workflows using Ilastik or Python
+- Ready-to-Use and customizable workflows: Cell segmentation pipelines. 3D volumetric analysis workflows. Whole-slide imaging pipelines. Machine learning workflows using TensorFLow, Pytorch, etc.
 
 ## User Requirements
 
@@ -43,17 +41,15 @@ To ensure smooth access to VIBE, users should meet the following technical and a
 
 ### Technical Requirements
 
-- Modern web browser: Chrome, Firefox, Safari, or Edge
-- Be connected to the UniBE campus network with a stable internet connection: 
-    - Minimum: 10 Mbps
-    - Recommended: 25+ Mbps for smooth interaction
-
+- Any modern web browser.
+- Be connected to the UniBE campus network with a stable internet connection.
 - Device:
     - Laptop or desktop (Windows, macOS, or Linux)
     - Tablet is partially supported (mouse recommended)
 
 ### Administrative Requirements
 
-- Campus account. 
-- UBELIX account. 
+- You must have:
+    - Campus account. 
+    - UBELIX account. 
 
