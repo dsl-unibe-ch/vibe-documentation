@@ -16,5 +16,10 @@ The VIBE desktop is the virtual platform for advanced and interactive image anal
 
 The VIBE desktop uses [https://ondemand.hpc.unibe.ch](https://ondemand.hpc.unibe.ch).
 
-Want to find out more? have a look at our list of [examples](examples/examples_overview.md).
+---
+
+Want to find out more? 
+
+Take a look at our list of [examples](examples/examples_overview.md) and get started with our [quick guide](getting-started/quick_start.md).
+
 
