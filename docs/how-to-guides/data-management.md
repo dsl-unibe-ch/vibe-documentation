@@ -4,7 +4,7 @@ This section provides an overview of how data is organized and managed within yo
 
 ---
 
-# Data Organization
+## Data Organization
 
 Because VIBE runs on the UBELIX cluster, it uses the same file system and storage structure as UBELIX. This means that your `$HOME` directory, along with all folders and data available in your UBELIX account, is automatically accessible within your VIBE desktop session.
 
@@ -27,13 +27,13 @@ If your project has specific storage requirements, or if you are unsure whether 
 
 ---
 
-# Data Transfer
+## Data Transfer
 
 Data can be transferred to and from your VIBE environment in several ways. Below we describe the recommended options.
 
 ---
 
-## 1. Via UBELIX OnDemand
+### Via UBELIX OnDemand
 
 You can use the UBELIX OnDemand web interface to upload and download files.
 
@@ -46,7 +46,7 @@ You can use the UBELIX OnDemand web interface to upload and download files.
 
 ---
 
-## 2. Via Command Line (Advanced)
+### Via Command Line (Advanced)
 
 If you are comfortable working with the command line, you can transfer data using tools such as `scp` or `rsync`.
 
@@ -55,6 +55,6 @@ Please refer to the official UBELIX [documentation](https://hpc-unibe-ch.github.
 
 ---
 
-## 3. Connecting to a Cloud Service
+### Via a Cloud Service
 
-If your data is stored in a cloud service (e.g., OneDrive, Google Drive, Dropbox), you can access it directly from VIBE using the web browser. Simply log in with your credentials as you would from any other system and upload or download files as needed.
+If your data is stored in a cloud service (e.g., OneDrive, Google Drive, Dropbox), you can access it directly from VIBE using the web browser. Launch Firefox from VIBE, find your storage service provider and simply log in with your credentials as you would from any other system and upload or download files as needed.
