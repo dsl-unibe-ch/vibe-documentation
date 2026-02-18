@@ -4,9 +4,9 @@ In this section you will have an overview of how the data is located and managed
 
 # Data organization
 
-Since VIBE is running on the UBELIX cluster, it uses the same file system and data organization scheme as that of UBELIX. 
+Since VIBE is running on the UBELIX cluster, it uses the same file system and data organization scheme as that of UBELIX. That means that your `$HOME` directory as well as all the folders and data present in your UBELIX session will be by default available in the VIBE desktop. 
 
-That includes:
+This includes:
 
  - [x] User `$HOME`.
  - [x] Workspace (research storage)
@@ -14,7 +14,7 @@ That includes:
  - [x] Network scratch 
  - [x] Local scratch
     
-That means that your `$HOME` directory as well as all the folders and data present in your UBELIX session will be by default available in the VIBE desktop. Similarly, the data storage quota that you currently have in your UBELIX account as well as snapshot or backup services applies for your VIBE session.
+Similarly, the data storage quota that you currently have in your UBELIX account as well as snapshot or backup services applies for your VIBE session.
 Find more information on the different data storage service options offered by UBELIX [here](https://hpc-unibe-ch.github.io/storage/).
 
 !!! note
