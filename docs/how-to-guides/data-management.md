@@ -1,15 +1,5 @@
 # Overview
 
-outline
-
- - [x] Overview and distinction between data organization and data transfer
- - [x] Explain data quotas and make reference to UBELIX
- - [x] Explain data quotas on Research storage
- - [x] Explain que equivalent data organization of VIBE as of UBELIX
- - [x] Ways to acquire request a quota or additional storage
- - [x] How to get your data there.
-
-
 In this section you will have an overview of how the data is located and managed in your VIBE session. As well as how you can move and transfer data from and to your VIBE desktop.
 
 # Data organization
