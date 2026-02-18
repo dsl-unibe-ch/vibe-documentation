@@ -1,53 +1,60 @@
 # Overview
 
-In this section you will have an overview of how the data is located and managed in your VIBE session. As well as how you can move and transfer data from and to your VIBE desktop.
+This section provides an overview of how data is organized and managed within your VIBE session, as well as how to transfer data to and from your VIBE desktop.
 
-# Data organization
+---
 
-Since VIBE is running on the UBELIX cluster, it uses the same file system and data organization scheme as that of UBELIX. That means that your `$HOME` directory as well as all the folders and data present in your UBELIX session will be by default available in the VIBE desktop. 
+# Data Organization
+
+Because VIBE runs on the UBELIX cluster, it uses the same file system and storage structure as UBELIX. This means that your `$HOME` directory, along with all folders and data available in your UBELIX account, is automatically accessible within your VIBE desktop session.
 
 This includes:
 
- - [x] User `$HOME`.
- - [x] Workspace (research storage)
- - [x] Capacity storage
- - [x] Network scratch 
- - [x] Local scratch
-    
-Similarly, the data storage quota that you currently have in your UBELIX account as well as snapshot or backup services applies for your VIBE session.
-Find more information on the different data storage service options offered by UBELIX [here](https://hpc-unibe-ch.github.io/storage/).
+- [x] User `$HOME`
+- [x] Workspace (Research Storage, in case you have)
+- [x] Capacity Storage (in case you have)
+- [x] Network Scratch
+- [x] Local Scratch
+
+Your existing storage quotas, snapshot policies, and backup services configured for your UBELIX account also apply to your VIBE session.
+
+For detailed information about the different storage services provided by UBELIX, please refer to the official [documentation](https://hpc-unibe-ch.github.io/storage/).
 
 !!! note
-    We encourage researchers to use the **Research Storage Service** offered by the University, since offers centralized, cost effective, daily backup and seamlessly connectivity and data transfer for UBELIX and the VIBE environment.
+    We encourage researchers to use the **Research Storage Service** provided by the University. It offers centralized, cost-effective storage with daily backups, as well as seamless connectivity and data transfer between UBELIX and the VIBE environment.
 
+If your project has specific storage requirements, or if you are unsure whether additional storage is needed, please [contact us](../contact.md) or request a [quote](https://intern.unibe.ch/dienstleistungen/informatik/dienstleistungen_der_informatikdienste/dienstleistungen___ressourcen/research_storage/index_ger.html) through the University IT Services website.
 
-May your project require special needs for data storage or you are not sure if you need extra storage for your project? [Get in touch with us](../contact.md) or  ask for a [quote](https://intern.unibe.ch/dienstleistungen/informatik/dienstleistungen_der_informatikdienste/dienstleistungen___ressourcen/research_storage/index_ger.html) on the IT services site of the University. 
+---
 
+# Data Transfer
 
-# Data transfer
+Data can be transferred to and from your VIBE environment in several ways. Below we describe the recommended options.
 
-Data can be moved from/to your VIBE environment in a number of ways. Here we describe the recommended ways to do so.
+---
 
 ## 1. Via UBELIX OnDemand
 
-You can take advantage of the UBELIX OnDemand tool to transfer data.
+You can use the UBELIX OnDemand web interface to upload and download files.
 
- - Click on **"Files"** in the menu bar at the top left of the UBELIX OnDemand portal (see arrow).
- - Your sessions' `$HOME` directory will be displayed with all the content.
- - use the **"Upload"** button to load files from your host machine to any location you whish in your VIBE session.
- - use the **"Download"** button to copy files from your VIBE session to your host machine.
-
+- Click on **"Files"** in the menu bar at the top left of the UBELIX OnDemand portal (see arrow in the image below).
+- Your session’s `$HOME` directory will be displayed along with its contents.
+- Use the **"Upload"** button to transfer files from your local computer to any directory within your VIBE session.
+- Use the **"Download"** button to copy files from your VIBE session to your local computer.
 
 ![](../assets/images/transfer_data_via_ood.png)
 
+---
 
-## 2. Via Command line (Advanced)
+## 2. Via Command Line (Advanced)
 
-If you are comfortable using the command line, you can move data from/to your VIBE environment using tools such as `scp` and `rsync`.
+If you are comfortable working with the command line, you can transfer data using tools such as `scp` or `rsync`.
 
-Take a look at the documentation in UBELIX on how to use the command line for transferring data [here](https://hpc-unibe-ch.github.io/firststeps/movingdata/).
+Please refer to the official UBELIX [documentation](https://hpc-unibe-ch.github.io/firststeps/movingdata/) for detailed instructions:
 
 
-## 3. Connecting to a cloud service
+---
 
-If you have your data storage in a claud service, for instance, OneDrive, GoogleDrive, DropBox, etc, you can connect using the internet browser from VIBE and login with your credential as you normally would do from any other system.
+## 3. Connecting to a Cloud Service
+
+If your data is stored in a cloud service (e.g., OneDrive, Google Drive, Dropbox), you can access it directly from VIBE using the web browser. Simply log in with your credentials as you would from any other system and upload or download files as needed.
