@@ -7,27 +7,15 @@ This guide will walk you through the initial setup and usage of the VIBE desktop
 !!! warning
     The following description is based on the current version of the form. Please note that the content may change as the form evolves.
 
-## Outline
-
-* [x] Overview of the VIBE OpenOnDemand app
-* [x] Requirements for using VIBE
-* [x] Defining your system configuration    
-    * [x] Extended description of the form and its parameters -> moved to in-depth explanation
-* [x] Launching the VIBE desktop
-* [x] Interacting with the VIBE desktop: navigating the file system, viewing research storage, opening images
-* [x] Launching applications on VIBE
-* [x] Closing your session
-    * [x] Note on persistent sessions
-
 ## What You Need
 
-To use the VIBE desktop, you must meet the following requirements:
+To use the VIBE desktop you will need:
 
-* **Access to the campus network**: You need to be connected to the university network either through EduRoam or using the FortiClient VPN to connect remotely. Instructions for setting up the VPN client can be found in the IT Services [Internet and Network Access documentation](https://www.unibe.ch/universitaet/campus__und__infrastruktur/rund_um_computer/internetzugang/index_ger.html).
+* **Access to the campus network**: You need to be connected to the university network either through EduRoam or using the FortiClient VPN to connect remotely. Find instructions for setting up the VPN client in the IT Services [Internet and Network Access documentation](https://www.unibe.ch/universitaet/campus__und__infrastruktur/rund_um_computer/internetzugang/index_ger.html).
 
 * **An active UBELIX account**: You must have an active UBELIX account to access the VIBE desktop. Follow the steps outlined in the UBELIX documentation on [how to access UBELIX](https://hpc-unibe-ch.github.io/firststeps/accessUBELIX/).
 
-* **A VIBE project account**: To access the full computational resources of the VIBE desktop, you need a VIBE project account. Contact us for more details or refer to our current [pricing model](#). You can still access VIBE with a free account, but your resources will be limited and subject to queue times if resources are not available.
+* **A VIBE project account**: To access the full computational resources of the VIBE desktop, you need a VIBE project account. [Get in touch](../contact.md) for additional details and costs of the service. You can still access VIBE with a free account, but your resources will be limited and subject to queue times if resources are not available.
 
 ## Defining Your System Configuration
 
