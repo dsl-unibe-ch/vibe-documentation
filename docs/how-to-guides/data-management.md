@@ -16,16 +16,16 @@ Your data quota in the VIBE desktop is the same as the one defined by UBELIX. Th
 
 - [x] **User `$HOME`**. A user home directory that includes a 1TB storage. It is located under `/storage/home/$USER`, where `$USER` is the campus account. Regular snapshots provide possibility to recover accidentally modified or deleted data.
 
-- [x] **Personal `$SCRATCH`**. A temporary storage space located at `/storage/scratch/user/$USER` with 15TB storage capacity meant for temporary data only with no snapshot and no backup and automatic deletion policy after 30 days.
+- [x] **Temporary storage space**. A temporary storage space located at `/storage/scratch/user/$USER` with 15TB storage capacity meant for temporary data only with no snapshot and no backup and automatic deletion policy after 30 days.
 
 Please refer to the official [UBELIX documentation](https://hpc-unibe-ch.github.io/storage/) for specific information about the different storage services provided.
 
 ### Additional quota
 
-If your project has specific storage requirements, or if you are unsure whether additional storage is needed, please [contact us](../contact.md) or request a [quote](https://intern.unibe.ch/dienstleistungen/informatik/dienstleistungen_der_informatikdienste/dienstleistungen___ressourcen/research_storage/index_ger.html) through the University IT Services website.
+If your project requires more storage you can request space on the Research Storage. It offers centralized, cost-effective storage with daily backups, as well as seamless connectivity and data transfer between UBELIX and the VIBE environment. You can request a [quote](https://intern.unibe.ch/dienstleistungen/informatik/dienstleistungen_der_informatikdienste/dienstleistungen___ressourcen/research_storage/index_ger.html) through the University IT Services website. 
 
-!!! note
-    We encourage researchers to use the **Research Storage Service** provided by the University. It offers centralized, cost-effective storage with daily backups, as well as seamless connectivity and data transfer between UBELIX and the VIBE environment.
+If you are unsure about the requirements of your project, feel free to [contact us](../contact.md).
+
 
 ---
 
