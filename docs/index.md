@@ -15,8 +15,8 @@ This documentation provides all essential information to help you get started wi
 
 ---
 
-# Want to Learn More? 
+# Want to know more? 
 
-Start with our [quick guide](getting-started/quick_start.md) for a step-by-step introduction.
+### Get started with our [quick guide](getting-started/quick_start.md) for a step-by-step introduction.
 
-Explore practical workflows and use cases in our [examples](examples/examples_overview.md).
+### Or explore practical workflows and use cases in our [examples](examples/examples_overview.md).

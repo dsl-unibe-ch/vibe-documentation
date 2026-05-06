@@ -37,19 +37,24 @@ To use the VIBE desktop you will need:
 
 ## Interacting with the VIBE Desktop
 
-The VIBE desktop operates like a typical Linux desktop, providing a familiar graphical user interface (GUI) for browsing files, launching applications, and even navigating the internet. However, its real power lies in the pre-installed bio-image analysis tools that are ready to use.
+The VIBE desktop operates like a typical Linux desktop, providing a familiar graphical user interface (GUI) for browsing files, launching applications, and even navigating the internet. An integrated terminal emulator allows more advanced users to run custom commands or scripts directly from the command line. However, its real power lies in the pre-installed bio-image analysis tools that are ready to use. Furthermore, the *vibe desktop can additionally be extended and customized for your specific application or set of applications*.
 
-Additionally, VIBE includes an integrated terminal emulator, which allows more advanced users to run custom commands or scripts directly from the command line.
 
-!!! note "Note for me"
-    *Consider showing a screenshot of the VIBE desktop menu here, highlighting key areas such as the applications in the menu, file manager, etc.*
+<!-- ![vibe_menu_application_list](../assets/images/vibe_menu_application_list.png) -->
+<div style="text-align: center;">
+  <img src="../assets/images/vibe_menu_application_list.png" alt="Centered image" style="display: block; margin: 0 auto;">
+  <figcaption> Basic interactive features of the VIBE desktop. 1) Application menu. 2) Terminal Emulator 3) File explorer tool and 4) Browser explorer.  
+  </figcaption>
+</div>
+
 
 Since VIBE is connected directly to the UBELIX cluster, you have seamless access to research storage. You can easily browse your research files and open datasets directly within the desktop environment.
 
 You can for instance, open a sample image from the research storage and visualize it using **Napari**, a popular tool for bio-image analysis.
 
-!!! note "Note for me"
-    *add screenshot of an open image using napari*
+<video controls loop muted autoplay>
+    <source src="../assets/videos/vibe_open_image_with_napari.mp4" type="video/mp4">
+</video>
 
 ## Closing Your Session
 
@@ -68,17 +73,17 @@ There are several ways to close your VIBE session:
    * In the OpenOnDemand dashboard, click on **Jobs** in the main window and then go to **Active Jobs**. Find the job running the VIBE desktop by its name `<vibe-desktop-dev>` or job ID. To terminate the session, click the red trash can icon under the "Actions" column.
 
 !!! warning
-    **Important**: Simply closing your browser window without properly terminating your session may result in unintended billing charges. Always follow the termination steps outlined above.
+    **Important**: Simply closing your browser window without properly terminating your session as indicated above may result in unintended billing charges. Always follow the termination steps outlined above.
 
 !!! note 
-    **Persistent Session**: Your session is persistent after closing. This means any files, models, images, or other data saved during your session will be preserved for the next time you log in.
+    **Persistent Session**: Your session is persistent after closing. This means any files, models, images, or other data saved at your work space during your session will be preserved for the next time you log in.
 
 ## Full Video Tutorial
 
 For a detailed walkthrough of the VIBE desktop setup and usage, you can watch the full tutorial video here:
 
 !!! note "Note for me"
-    replace this outdated video so it matches the last changes in this form.
+    OUTDATED video!! replace this outdated video when the new form is ready.
 <video controls loop muted autoplay>
     <source src="../assets/videos/VIBE_quick_start_user_form_2x.mp4" type="video/mp4">
 </video>
