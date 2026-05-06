@@ -52,8 +52,9 @@ Since VIBE is connected directly to the UBELIX cluster, you have seamless access
 
 You can for instance, open a sample image from the research storage and visualize it using **Napari**, a popular tool for bio-image analysis.
 
-!!! note "Note for me"
-    *add screenshot of an open image using napari*
+<video controls loop muted autoplay>
+    <source src="../assets/videos/vibe_open_image_with_napari.mp4" type="video/mp4">
+</video>
 
 ## Closing Your Session
 
