@@ -37,12 +37,16 @@ To use the VIBE desktop you will need:
 
 ## Interacting with the VIBE Desktop
 
-The VIBE desktop operates like a typical Linux desktop, providing a familiar graphical user interface (GUI) for browsing files, launching applications, and even navigating the internet. However, its real power lies in the pre-installed bio-image analysis tools that are ready to use.
+The VIBE desktop operates like a typical Linux desktop, providing a familiar graphical user interface (GUI) for browsing files, launching applications, and even navigating the internet. An integrated terminal emulator allows more advanced users to run custom commands or scripts directly from the command line. However, its real power lies in the pre-installed bio-image analysis tools that are ready to use. 
 
-Additionally, VIBE includes an integrated terminal emulator, which allows more advanced users to run custom commands or scripts directly from the command line.
+![vibe_menu_application_list](../assets/images/vibe_menu_application_list.png)
+
+Furthermore, the *vibe desktop can additionally be extended and customized for your specific application or set of applications*.
+
 
 !!! note "Note for me"
     *Consider showing a screenshot of the VIBE desktop menu here, highlighting key areas such as the applications in the menu, file manager, etc.*
+
 
 Since VIBE is connected directly to the UBELIX cluster, you have seamless access to research storage. You can easily browse your research files and open datasets directly within the desktop environment.
 
