@@ -73,17 +73,17 @@ There are several ways to close your VIBE session:
    * In the OpenOnDemand dashboard, click on **Jobs** in the main window and then go to **Active Jobs**. Find the job running the VIBE desktop by its name `<vibe-desktop-dev>` or job ID. To terminate the session, click the red trash can icon under the "Actions" column.
 
 !!! warning
-    **Important**: Simply closing your browser window without properly terminating your session may result in unintended billing charges. Always follow the termination steps outlined above.
+    **Important**: Simply closing your browser window without properly terminating your session as indicated above may result in unintended billing charges. Always follow the termination steps outlined above.
 
 !!! note 
-    **Persistent Session**: Your session is persistent after closing. This means any files, models, images, or other data saved during your session will be preserved for the next time you log in.
+    **Persistent Session**: Your session is persistent after closing. This means any files, models, images, or other data saved at your work space during your session will be preserved for the next time you log in.
 
 ## Full Video Tutorial
 
 For a detailed walkthrough of the VIBE desktop setup and usage, you can watch the full tutorial video here:
 
 !!! note "Note for me"
-    replace this outdated video so it matches the last changes in this form.
+    OUTDATED video!! replace this outdated video when the new form is ready.
 <video controls loop muted autoplay>
     <source src="../assets/videos/VIBE_quick_start_user_form_2x.mp4" type="video/mp4">
 </video>
