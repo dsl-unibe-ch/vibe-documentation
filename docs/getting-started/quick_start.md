@@ -37,15 +37,15 @@ To use the VIBE desktop you will need:
 
 ## Interacting with the VIBE Desktop
 
-The VIBE desktop operates like a typical Linux desktop, providing a familiar graphical user interface (GUI) for browsing files, launching applications, and even navigating the internet. An integrated terminal emulator allows more advanced users to run custom commands or scripts directly from the command line. However, its real power lies in the pre-installed bio-image analysis tools that are ready to use. 
-
-![vibe_menu_application_list](../assets/images/vibe_menu_application_list.png)
-
-Furthermore, the *vibe desktop can additionally be extended and customized for your specific application or set of applications*.
+The VIBE desktop operates like a typical Linux desktop, providing a familiar graphical user interface (GUI) for browsing files, launching applications, and even navigating the internet. An integrated terminal emulator allows more advanced users to run custom commands or scripts directly from the command line. However, its real power lies in the pre-installed bio-image analysis tools that are ready to use. Furthermore, the *vibe desktop can additionally be extended and customized for your specific application or set of applications*.
 
 
-!!! note "Note for me"
-    *Consider showing a screenshot of the VIBE desktop menu here, highlighting key areas such as the applications in the menu, file manager, etc.*
+<!-- ![vibe_menu_application_list](../assets/images/vibe_menu_application_list.png) -->
+<div style="text-align: center;">
+  <img src="../assets/images/vibe_menu_application_list.png" alt="Centered image" style="display: block; margin: 0 auto;">
+  <figcaption> Basic interactive features of the VIBE desktop. 1) Application menu. 2) Terminal Emulator 3) File explorer tool and 4) Browser explorer.  
+  </figcaption>
+</div>
 
 
 Since VIBE is connected directly to the UBELIX cluster, you have seamless access to research storage. You can easily browse your research files and open datasets directly within the desktop environment.
