@@ -10,7 +10,7 @@ The following is a comparison benchmark of resources used for applying deconvolu
 |   Instance Size | data size (GB) |   GPU Type | Run time (s) |
 | :-------------: | :-----------:  | :--------: | :----------: |
 |      Medium     |   2.5          |   RTX 4090 | 172          |
-|       Large     |   2.5          |   RTX 4090 | 264,69       |
+|       Large     |   2.5          |   RTX 4090 | 169      |
 
 
 
@@ -28,6 +28,14 @@ The following is a comparison benchmark of resources used for applying deconvolu
 |     GPU Type   |  RTX 4090 | H100 | A100 |
 | :------------: | :------: | :--: | :--: |
 |  Run time (s)  | 387,07 | 634,78 | 843,16 | 
+
+
+!!! Note for me
+    add few point concluding that:
+    - larger session instance does not necessary help with computation performance for small datasets
+    - computation time increases with larger dataset
+    - different GPUs are optimized for different task and the fact that they have larger memory does not necessarx translate in better performance for your image computation task.
+    Add a small explaination/ section on FAQ. Explain main reasons why your application may crash due to ram requirements
 
 
 !!! NOTE 
