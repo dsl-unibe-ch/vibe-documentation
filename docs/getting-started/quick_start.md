@@ -21,17 +21,17 @@ To use the VIBE desktop you will need:
 
 1. **Access the UBELIX OpenOnDemand portal**: Go to [https://ondemand.hpc.unibe.ch](https://ondemand.hpc.unibe.ch). In the navigation bar, click on **"My Interactive Sessions"**. You will see a list of available interactive applications such as VS Code server, Jupyter Notebook, and, of course, VIBE Desktop. Select **VIBE Desktop** to proceed.
 
-2. **VIBE system configuration form**: Once you select VIBE, you will be redirected to the system configuration form. This is where you will define the parameters for your session. For more details on the configuration options, see the [VIBE system configuration form documentation](../in-depth-explanations/vibe_configuration_form.md). Fill out the system configuration form:
+2. **VIBE system configuration form**: Once you select VIBE, you will be redirected to the system configuration form. This is where you will define the parameters for your session. For more details on the configuration options, see the [VIBE system configuration form documentation](../in-depth-explanations/vibe_configuration_form.md). 
 
-    - **Time limit**: 3 hour
-    - **Accounts**: gratis
-    - **Partition**: gpu-invest
-    - **QoS**: job_gpu_preemptable
-    - **GPU type**: RTX 4090 
-    - **Number of GPUs**: 1
-    - **Instance size**: Large
+Fill out the system configuration form using the following parameters:
 
-![vibe\_configuration\_form](../assets/images/VIBE_submission_form_quick_start.png)
+
+| Account   | wckey   |      QoS       |   GPU Type |   Instance Size |  Time limit in hours  |
+| :-------: | :-----: | :------------: | :--------: | :-------------: | :-------------------: |
+|   invest  |   -     | job_gpu_vibe   |   RTX 4090 |       Large     |           1           |
+
+
+![vibe\_configuration\_form](../assets/images/VIBE_submission_form_quick_start_OLD.png)
 
 3. **Launch the desktop**: Once you've configured your session, click on the blue **"Launch"** button. It may take a few minutes for your session to start. Please be patient while the system prepares your environment.
 
@@ -85,5 +85,5 @@ For a detailed walkthrough of the VIBE desktop setup and usage, you can watch th
 !!! note "Note for me"
     OUTDATED video!! replace this outdated video when the new form is ready.
 <video controls loop muted autoplay>
-    <source src="../assets/videos/VIBE_quick_start_user_form_2x.mp4" type="video/mp4">
+    <source src="../assets/videos/VIBE_quick_start_user_form_2x_OLD.mp4" type="video/mp4">
 </video>
