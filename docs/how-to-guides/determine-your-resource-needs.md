@@ -1,3 +1,34 @@
 # Determine your resource needs
 
 This guide should help you to determine the resources required for your usage. Requesting only the resources necessary comes with multiple advantages, mainly less usage costs and less waiting time before your desktop session is started.
+
+
+The following is a comparison benchmark of resources used for applying convolution, a relatively intense computation task, that was performed on different computer configuration and datasets:
+
+1. Testing different instances with same dataset:
+
+|   Instance Size | data size (GB) |   GPU Type | Run time (s) |
+| :-------------: | :-----------:  | :--------: | :----------: |
+|      Medium     |   2.5          |   RTX 4090 | 172          |
+|       Large     |   2.5          |   RTX 4090 | 264,69       |
+
+
+
+2. Testing different data sizes with the maximum VIBE instance (60 cores, 360 GB RAM, 4x RTX4090):
+
+
+|    data size   | 15GB  |  27GB   |    35GB  | 40GB   |  45GB  |
+| :------------: | :----: | :----: | :------: | :----: | :----: |
+| Run time (s)   | 398   |   811   |    964   | 1043  |  1155  | 
+
+
+3. Testing different GPU performance on a Large VIBE instance with a 15GB dataset.
+
+
+|     GPU Type   |  RTX 4090 | H100 | A100 |
+| :------------: | :------: | :--: | :--: |
+|  Run time (s)  | 387,07 | 634,78 | 843,16 | 
+
+
+!!! NOTE 
+    The number presented here depend on a number of factors and this should only be used as a reference for your resources estimation. If you are unsure of how much resources do you think you will need, please feel free to get in touch with us for a customized guidance.
