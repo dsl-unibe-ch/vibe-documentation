@@ -26,7 +26,10 @@ nav:
   - In-Depth Explanations:
     - VIBE system configuration: in-depth-explanations/vibe_configuration_form.md
     - Launching Applications from the Terminal: in-depth-explanations/launching-applications-from-the-terminal.md 
-  - Get in touch: contact.md
+  - Support:
+    - Get in touch: support/contact.md
+    - Known limitations: support/known_limitations.md
+    - FAQ: support/faq.md
 
 # Configuration
 theme:
