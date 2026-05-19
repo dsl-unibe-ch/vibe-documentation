@@ -3,7 +3,7 @@
 This guide should help you to determine the resources required for your usage. Requesting only the resources necessary comes with multiple advantages, mainly less usage costs and less waiting time before your desktop session is started.
 
 
-The following is a comparison benchmark of resources used for applying convolution, a relatively intense computation task, that was performed on different computer configuration and datasets:
+The following is a comparison benchmark of resources used for applying deconvolution, a relatively intense computation task, that was performed on different computer configuration and datasets:
 
 1. Testing different instances with same dataset:
 
