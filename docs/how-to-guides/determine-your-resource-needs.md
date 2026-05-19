@@ -40,4 +40,4 @@ From these examples we can remark the following:
 !!! NOTE 
     The number presented here depend on a number of factors and this should only be used as a reference for your resources estimation. If you are unsure of how much resources do you think you will need, please feel free to get in touch with us for a customized guidance.
 
-In addition, if you encounter problems with your application such as sudden crash or frozen while performing very demanding computation task, limited RAM resources may be one reason of this problem. Please have a look at the FAQ section to know more and troubleshoot this probem.
+In addition, if you encounter problems with your application such as sudden crash or frozen while performing very demanding computation task, limited RAM resources may be one reason of this problem. Please have a look at the FAQ section to know more and troubleshoot this problem.
