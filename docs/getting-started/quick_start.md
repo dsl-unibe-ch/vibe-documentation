@@ -64,13 +64,13 @@ There are several ways to close your VIBE session:
 
    * In the menu bar, click on **Applications → Log Out**. A confirmation window will appear asking if you want to log out. Click **Log Out**. Leave the "Save session for future logins" option selected if you want to restore the same applications when you log in next time.
 
-2. **Via the OpenOnDemand "My Interactive Sessions" panel**:
 
-   * In OpenOnDemand, go to **"My Interactive Sessions"** and click the red **Delete** button next to your active session.
-
-3. **Via the Jobs Manager tool in OpenOnDemand**:
+2. **Via the Jobs Manager tool in OpenOnDemand**:
 
    * In the OpenOnDemand dashboard, click on **Jobs** in the main window and then go to **Active Jobs**. Find the job running the VIBE desktop by its name `<vibe-desktop-dev>` or job ID. To terminate the session, click the red trash can icon under the "Actions" column.
+
+
+We do not recommend to close your session using the **Delete** button via **"My interactive Sessions"** tab, because it will also erase your session logs.
 
 !!! warning
     **Important**: Simply closing your browser window without properly terminating your session as indicated above may result in unintended billing charges. Always follow the termination steps outlined above.
