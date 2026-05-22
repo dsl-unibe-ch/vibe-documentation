@@ -17,21 +17,46 @@ To use the VIBE desktop you will need:
 
 * **A VIBE project account**: To access the full computational resources of the VIBE desktop, you need a VIBE project account. [Get in touch](../contact.md) for additional details and costs of the service. You can still access VIBE with a free account, but your resources will be limited and subject to queue times if resources are not available.
 
-## Defining Your System Configuration
+## Getting Access
 
-1. **Access the UBELIX OpenOnDemand portal**: Go to [https://ondemand.hpc.unibe.ch](https://ondemand.hpc.unibe.ch). In the navigation bar, click on **"My Interactive Sessions"**. You will see a list of available interactive applications such as VS Code server, Jupyter Notebook, and, of course, VIBE Desktop. Select **VIBE Desktop** to proceed.
+1. Go to [https://ondemand.hpc.unibe.ch](https://ondemand.hpc.unibe.ch). In the navigation bar, click on **"My Interactive Sessions"**. You will see a list of available interactive applications such as VS Code server, Jupyter Notebook, and VIBE Desktop. Select the **VIBE Desktop**.
 
-2. **VIBE system configuration form**: Once you select VIBE, you will be redirected to the system configuration form. This is where you will define the parameters for your session. For more details on the configuration options, see the [VIBE system configuration form documentation](../in-depth-explanations/vibe_configuration_form.md). 
-
-Fill out the system configuration form using the following parameters:
+2. **VIBE system configuration form**: Once you select the VIBE desktop application, you will arrive the **system configuration form**. This is where you will define the parameters for your session. For more details on the configuration options, see the [VIBE system configuration form documentation](../in-depth-explanations/vibe_configuration_form.md). 
 
 
-| Account   | wckey   |      QoS       |   GPU Type |   Instance Size |  Time limit in hours  |
-| :-------: | :-----: | :------------: | :--------: | :-------------: | :-------------------: |
-|   invest  |   -     | job_gpu_vibe   |   RTX 4090 |       Large     |           1           |
+The VIBE desktop is accessible in multiples ways. Adjust the form accordingly.
 
 
-![vibe\_configuration\_form](../assets/images/VIBE_submission_form_quick_start_OLD.png)
+=== "VIBE subscription"
+    
+    | Account   | wckey   |      QoS       |   GPU Type        |   Instance Size |  Time limit in hours  |
+    | :-------: | :-----: | :------------: | :---------------: | :-------------: | :-------------------: |
+    |   invest  |   -     | job_gpu_vibe   | RTX 6000 MIG 24gb |       Medium    |           1           |
+    
+
+=== "Test version (Available only temporary)"
+    
+    | Account   | wckey   |      QoS            |   GPU Type |   Instance Size |  Time limit in hours  |
+    | :-------: | :-----: | :-----------------: | :--------: | :-------------: | :-------------------: |
+    |   gratis  |   -     | job_gpu_preemptable |   RTX 4090 |       Medium    |           1           |
+
+
+=== "Paygo (You own a 'wc' project key)"
+    
+    | Account   | wckey                   |      QoS       |   GPU Type |   Instance Size |  Time limit in hours  |
+    | :-------: | :---------------------: | :------------: | :--------: | :-------------: | :-------------------: |
+    |   paygo   | `<your_project_wc_key>` |     job_gpu    |   RTX 4090 |       Medium    |           1           |
+
+
+!!! types warning "Test version only available for short period"
+    The test version of the desktop comes with limited resources and limited support. It is meant to be used just for testing purpose and will be only available for a short period of time.
+
+
+Set the system configuration of your VIBE instance by filling the form with the parameters indicated bellow:
+
+
+
+![vibe\_configuration\_form](../assets/images/VIBE_submission_form_quick_start.png)
 
 3. **Launch the desktop**: Once you've configured your session, click on the blue **"Launch"** button. It may take a few minutes for your session to start. Please be patient while the system prepares your environment.
 
