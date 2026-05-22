@@ -17,19 +17,44 @@ To use the VIBE desktop you will need:
 
 * **A VIBE project account**: To access the full computational resources of the VIBE desktop, you need a VIBE project account. [Get in touch](../contact.md) for additional details and costs of the service. You can still access VIBE with a free account, but your resources will be limited and subject to queue times if resources are not available.
 
-## Defining Your System Configuration
+## Getting Access
 
-1. **Access the UBELIX OpenOnDemand portal**: Go to [https://ondemand.hpc.unibe.ch](https://ondemand.hpc.unibe.ch). In the navigation bar, click on **"My Interactive Sessions"**. You will see a list of available interactive applications such as VS Code server, Jupyter Notebook, and, of course, VIBE Desktop. Select **VIBE Desktop** to proceed.
+1. Go to [https://ondemand.hpc.unibe.ch](https://ondemand.hpc.unibe.ch). In the navigation bar, click on **"My Interactive Sessions"**. You will see a list of available interactive applications such as VS Code server, Jupyter Notebook, and VIBE Desktop. Select the **VIBE Desktop**.
 
-2. **VIBE system configuration form**: Once you select VIBE, you will be redirected to the system configuration form. This is where you will define the parameters for your session. For more details on the configuration options, see the [VIBE system configuration form documentation](../in-depth-explanations/vibe_configuration_form.md). Fill out the system configuration form:
+2. **VIBE system configuration form**: Once you select the VIBE desktop application, you will arrive the **system configuration form**. This is where you will define the parameters for your session. For more details on the configuration options, see the [VIBE system configuration form documentation](../in-depth-explanations/vibe_configuration_form.md). 
 
-    - **Time limit**: 3 hour
-    - **Accounts**: gratis
-    - **Partition**: gpu-invest
-    - **QoS**: job_gpu_preemptable
-    - **GPU type**: RTX 4090 
-    - **Number of GPUs**: 1
-    - **Instance size**: Large
+
+The VIBE desktop is accessible in multiples ways. Adjust the form accordingly.
+
+
+=== "VIBE subscription"
+    
+    | Account   | wckey   |      QoS       |   GPU Type        |   Instance Size |  Time limit in hours  |
+    | :-------: | :-----: | :------------: | :---------------: | :-------------: | :-------------------: |
+    |   invest  |   -     | job_gpu_vibe   | RTX 6000 MIG 24gb |       Medium    |           1           |
+    
+
+=== "Test version (Available only temporary)"
+    
+    | Account   | wckey   |      QoS            |   GPU Type |   Instance Size |  Time limit in hours  |
+    | :-------: | :-----: | :-----------------: | :--------: | :-------------: | :-------------------: |
+    |   gratis  |   -     | job_gpu_preemptable |   RTX 4090 |       Medium    |           1           |
+
+
+=== "Paygo (You own a 'wc' project key)"
+    
+    | Account   | wckey                   |      QoS       |   GPU Type |   Instance Size |  Time limit in hours  |
+    | :-------: | :---------------------: | :------------: | :--------: | :-------------: | :-------------------: |
+    |   paygo   | `<your_project_wc_key>` |     job_gpu    |   RTX 4090 |       Medium    |           1           |
+
+
+!!! types warning "Test version only available for short period"
+    The test version of the desktop comes with limited resources and limited support. It is meant to be used just for testing purpose and will be only available for a short period of time.
+
+
+Set the system configuration of your VIBE instance by filling the form with the parameters indicated bellow:
+
+
 
 ![vibe\_configuration\_form](../assets/images/VIBE_submission_form_quick_start.png)
 
@@ -64,26 +89,16 @@ There are several ways to close your VIBE session:
 
    * In the menu bar, click on **Applications → Log Out**. A confirmation window will appear asking if you want to log out. Click **Log Out**. Leave the "Save session for future logins" option selected if you want to restore the same applications when you log in next time.
 
-2. **Via the OpenOnDemand "My Interactive Sessions" panel**:
 
-   * In OpenOnDemand, go to **"My Interactive Sessions"** and click the red **Delete** button next to your active session.
-
-3. **Via the Jobs Manager tool in OpenOnDemand**:
+2. **Via the Jobs Manager tool in OpenOnDemand**:
 
    * In the OpenOnDemand dashboard, click on **Jobs** in the main window and then go to **Active Jobs**. Find the job running the VIBE desktop by its name `<vibe-desktop-dev>` or job ID. To terminate the session, click the red trash can icon under the "Actions" column.
+
+
+We do not recommend to close your session using the **Delete** button via **"My interactive Sessions"** tab, because it will also erase your session logs.
 
 !!! warning
     **Important**: Simply closing your browser window without properly terminating your session as indicated above may result in unintended billing charges. Always follow the termination steps outlined above.
 
 !!! note 
     **Persistent Session**: Your session is persistent after closing. This means any files, models, images, or other data saved at your work space during your session will be preserved for the next time you log in.
-
-## Full Video Tutorial
-
-For a detailed walkthrough of the VIBE desktop setup and usage, you can watch the full tutorial video here:
-
-!!! note "Note for me"
-    OUTDATED video!! replace this outdated video when the new form is ready.
-<video controls loop muted autoplay>
-    <source src="../assets/videos/VIBE_quick_start_user_form_2x.mp4" type="video/mp4">
-</video>
