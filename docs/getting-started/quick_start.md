@@ -102,13 +102,3 @@ We do not recommend to close your session using the **Delete** button via **"My 
 
 !!! note 
     **Persistent Session**: Your session is persistent after closing. This means any files, models, images, or other data saved at your work space during your session will be preserved for the next time you log in.
-
-## Full Video Tutorial
-
-For a detailed walkthrough of the VIBE desktop setup and usage, you can watch the full tutorial video here:
-
-!!! note "Note for me"
-    OUTDATED video!! replace this outdated video when the new form is ready.
-<video controls loop muted autoplay>
-    <source src="../assets/videos/VIBE_quick_start_user_form_2x_OLD.mp4" type="video/mp4">
-</video>
