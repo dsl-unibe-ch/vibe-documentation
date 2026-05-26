@@ -35,11 +35,14 @@ In this filed you can introduce your `wc_key` to launch the VIBE desktop ona Pay
 
 ### QoS
 
-Depending on the type of account you selected, different Quality of Service (QoS) options are available. Your QoS options will be displayed automatically as soon as you have picked your account. The VIBE users QoS `job_gpu_vibe` will be assigned automatically upon selection of the `invest` account.
+Depending on the type of account you selected, different Quality of Service (QoS) options are available. Your QoS options will be displayed automatically as soon as you have picked your account. The VIBE users QoS `job_gpu_vibe` will be assigned automatically upon selection of the `invest` account. The VIBE desktop can run on other QoS, but currently is supported in GPU partitions only, that means that you need to select the correct account and QoS that runs on GPU nodes.
 
 VIBE subscribers have the highest QoS when requesting resources for the virtual the desktop. This mean that VIBE users benefit from the highest priority in allocating dedicated VIBE's project hardware and the shortest  waiting time to launch your session instance. Note that VIBE hardware might be used in another QoS such as the preemptible queue. If this is the case, a minimum idle time of (few minutes) is needed to relocate such resources to your session. 
 
 Additional details on QoS and their usage can be found in the [UBELIX documentation on QoS](https://hpc-unibe-ch.github.io/runjobs/partitions/#qos).
+
+### GPU type
+
 
 * **Time Limit (in hours)**: Define the duration of your session.
 
