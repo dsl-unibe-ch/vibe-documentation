@@ -18,12 +18,28 @@ Here is an explanation of each field you can adjust according to your needs:
 
 
 ### Account
- Choose the appropriate account type based on your usage:
+ Choose the appropriate account type based on your use case:
 
-    * **gratis**: Select this option if you are using VIBE desktop for testing purposes with limited resources.
-    * **paygo**: You must belong to a project to use this option. For more details, refer to the [Pay-as-you-go (PAYG) Scheme](https://hpc-unibe-ch.github.io/costs/payg/) from UBELIX.
-    * **teaching**: Choose this option if you intend to use VIBE desktop for workshops or other teaching activities.
+ | Account  | Description | 
+ | :------: | :---------: |
+ | gratis   | Select this option for testing purposes with limited resources | 
+ | invest   | Select this option if you are a VIBE users | 
+ | paygo    | Select this option if you own a wc key of an independednt project. You must use your project `wc_key`[^1] | 
+ | teaching | Choose this option if you intend to use VIBE desktop for workshops or other teaching activities | 
 
+
+
+### wckey
+
+In this filed you can introduce your `wc_key` to launch the VIBE desktop ona Pay-Go basis with your project assigned resources. You must have an UBELIX project `wc_key` to use this option. 
+
+### QoS
+
+Depending on the type of account you selected, different Quality of Service (QoS) options are available. Your QoS options will be displayed automatically as soon as you have picked your account. The VIBE users QoS `job_gpu_vibe` will be assigned automatically upon selection of the `invest` account.
+
+VIBE subscribers have the highest QoS when requesting resources for the virtual the desktop. This mean that VIBE users benefit from the highest priority in allocating dedicated VIBE's project hardware and the shortest  waiting time to launch your session instance. Note that VIBE hardware might be used in another QoS such as the preemptible queue. If this is the case, a minimum idle time of (few minutes) is needed to relocate such resources to your session. 
+
+Additional details on QoS and their usage can be found in the [UBELIX documentation on QoS](https://hpc-unibe-ch.github.io/runjobs/partitions/#qos).
 
 * **Time Limit (in hours)**: Define the duration of your session.
 
@@ -75,3 +91,7 @@ Here is an explanation of each field you can adjust according to your needs:
 ## Note on storage options
 
 VIBE offers by default the same storage capacity offered by UBELIX. Read more on the storage quota and the different storage options from the [UBELIX documentation](https://hpc-unibe-ch.github.io/storage/).
+
+
+
+[^1]: For more details, refer to the [Pay-as-you-go (PAYG) Scheme](https://hpc-unibe-ch.github.io/costs/payg/) from UBELIX.
