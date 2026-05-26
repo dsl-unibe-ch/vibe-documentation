@@ -7,7 +7,12 @@ The VIBE configuration form allows you to customize the features of your VIBE de
 The fields displayed in the form are dynamically generated and the options offered change accordingly on what type of resources are available for the account you choose. That means that not all resources are always available for all type of accounts. For not VIBE users, UBELIX cost and billing scheme applies including the free tiers. Note that free tiers may be use only for testing purpose and it comes with limited resources and support.
 
 
-![vibe_submission_form](../assets/images/VIBE_submission_form.png)
+<!-- ![vibe_menu_application_list](../assets/images/vibe_menu_application_list.png) -->
+<div style="text-align: center;">
+  <img src="../assets/images/VIBE_submission_form.png" alt="Centered image" style="display: block; margin: 0 auto;">
+  <figcaption> VIBE configuration form.  
+  </figcaption>
+</div>
 
 Here is an explanation of each field you can adjust according to your needs:
 
