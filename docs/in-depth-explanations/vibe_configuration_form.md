@@ -43,51 +43,51 @@ Additional details on QoS and their usage can be found in the [UBELIX documentat
 
 ### GPU type
 
-
-* **Time Limit (in hours)**: Define the duration of your session.
-
-* **<s>Desktop Environment</s>**: This option will be removed once issue [#16](https://github.com/dsl-unibe-ch/vibe-desktop-dev/issues/16) in vibe-desktop-dev is resolved.
+You can choose for the different GPUs available. The VIBE's dedicated graphic cards are `RTX 4090` and `RTX 6000 MIG 24G`. Use any of this hardware if you are on the VIBE user's QoS. You may use another cards if you run the VIBE desktop on a different QoS.
 
 
+### Instance Size
 
-* **Partition**: Currently, ondemand applications can only be run on GPU nodes. Available partitions are:
+ Define the amount of resources (CPU cores and RAM) for your session. Three default configurations are available:
 
-    * gpu
-    * gpu-invest
+ | Instance size  | Number of cores | RAM size (GB) | note |
+ | :----------- : | :-------------: | :-----------: | :--: |
+ |      Small     |        4        |       16       | Good for small tasks such as browsing your files and opening small images |
+ |      Medium    |        8        |       32       | For more demanding tasks that involve computations on your images, etc |
+ |      Large     |        16       |        64      | For visualizing in 2D or 3D modest datasets and some modest computations |
+ |      Custom    |        -        |         -      | Select this if you want to use a different configuration. |
 
-  For more information on partitions and their usage, refer to the [UBELIX documentation on Partitions](https://hpc-unibe-ch.github.io/runjobs/partitions/#partitions).
 
-* **QoS**: The following Quality of Service (QoS) options are available:
+### Number of GPUs
 
-    * job_cpu_premptable
-    * job_debug
-    * job_gpu_preemptable
-    * job_gratis
+select here the number of GPUs you plan to use. By default there is one GPU assigned to your session. If you are not sure about how many GPUs to use or how large your instance should be for your task, use this [guide](../how-to-guides/determine-your-resource-needs.md) to determine your resources needs.
 
-  Additional details on QoS and their usage can be found in the [UBELIX documentation on QoS](https://hpc-unibe-ch.github.io/runjobs/partitions/#qos).
+### Number of hours
 
-* **GPU Type**: Choose from the available GPUs listed in VIBE:
+Choose the time allocated for your VIBE session.
 
-    * RTX 3090
-    * RTX 4090
-    * A100
-    * H100
-    * H200
+### Session Configuration
 
-* **Instance Size**: Define the amount of resources (CPU cores and RAM) for your session. Three default configurations are available:
+By changing the "Standard" session configuration, you could customize your session by for instance adding environmental variables or loading custom modules. This option is recommended only for advanced user.
 
-    * **Small**: 4 cores, 8GB RAM
-    * **Medium**: 32 cores, 32GB RAM
-    * **Large**: 16 cores, 64GB RAM
-    * **Custom**: Allows you to create a custom hardware configuration for your application.
 
-  For more information on allowed configurations, refer to the [UBELIX documentation on resource selection](https://hpc-unibe-ch.github.io/hardware/gpu/#cpu-memory).
+!!! Warning
+    Changing the session configuration may break your session in unexpected ways. Only use this option if you know what you are doing. Get in touch with the VIBE support team for guidance on how to customize your session this way.
 
-* **Number of Nodes**: Specify the number of nodes required for your computation, if more than one is needed.
+### Email on start
 
-* **CUDA Version**: If you are using a version of CUDA other than the default (CUDA/12.6.0) on UBELIX, specify your version here.
+If your session is queued for some time, you can provide a valid email address to receive a notification once your session begins.
 
-* **Email on Start**: If your session is queued for some time, you can provide a valid email address to receive a notification once your session begins.
+## Instance limits
+
+The current maximum instance size for VIBE users depend on which GPU you select. The table bellow displays the configuration limits for the VIBE dedicated hardware:
+
+ | GPU type  | Number of cores | RAM size (GB) per graphic card | number of GPUs |
+ | :------ : | :-------------: | :----------------------------: | :------------: |
+ | RTX 4090  | 16 | 90 | 4  |
+ | RTX 6000 MIG 24G | 8 | 90 | 4 |
+
+For other hardware, the limits defined by UBELIX apply.
 
 ---
 
