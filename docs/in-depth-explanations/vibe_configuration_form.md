@@ -2,22 +2,29 @@
 
 ## Overview
 
-The VIBE configuration form allows you to customize the features of your VIBE desktop instance, including resource allocation and session duration. 
+The VIBE configuration form allows you to customize the features of your VIBE desktop instance, including resource allocation and session duration.
+
+The fields displayed in the form are dynamically generated and the options offered change accordingly on what type of resources are available for the account you choose. That means that not all resources are always available for all type of accounts. For not VIBE users, UBELIX cost and billing scheme applies including the free tiers. Note that free tiers may be use only for testing purpose and it comes with limited resources and support.
 
 
 ![vibe_submission_form](../assets/images/VIBE_submission_form.png)
 
 Here is an explanation of each field you can adjust according to your needs:
 
-* **Time Limit (in hours)**: Define the duration of your session.
 
-* **<s>Desktop Environment</s>**: This option will be removed once issue [#16](https://github.com/dsl-unibe-ch/vibe-desktop-dev/issues/16) in vibe-desktop-dev is resolved.
-
-* **Account**: Choose the appropriate account type based on your usage:
+### Account
+ Choose the appropriate account type based on your usage:
 
     * **gratis**: Select this option if you are using VIBE desktop for testing purposes with limited resources.
     * **paygo**: You must belong to a project to use this option. For more details, refer to the [Pay-as-you-go (PAYG) Scheme](https://hpc-unibe-ch.github.io/costs/payg/) from UBELIX.
     * **teaching**: Choose this option if you intend to use VIBE desktop for workshops or other teaching activities.
+
+
+* **Time Limit (in hours)**: Define the duration of your session.
+
+* **<s>Desktop Environment</s>**: This option will be removed once issue [#16](https://github.com/dsl-unibe-ch/vibe-desktop-dev/issues/16) in vibe-desktop-dev is resolved.
+
+
 
 * **Partition**: Currently, ondemand applications can only be run on GPU nodes. Available partitions are:
 
