@@ -15,7 +15,15 @@ To use the VIBE desktop you will need:
 
 * **An active UBELIX account**: You must have an active UBELIX account to access the VIBE desktop. Follow the steps outlined in the UBELIX documentation on [how to access UBELIX](https://hpc-unibe-ch.github.io/firststeps/accessUBELIX/).
 
-* **A VIBE project account**: To access the full computational resources of the VIBE desktop, you need a VIBE project account. [Get in touch](../support/contact.md) for additional details and costs of the service. You can still access VIBE with a free account, but your resources will be limited and subject to queue times if resources are not available.
+* **A VIBE project account**: To access the full computational resources of the VIBE desktop, you need a VIBE project account.
+
+### How do I get a VIBE project account?
+
+* Follow the instructions on [how to get a PAYGO account in UBELIX](https://hpc-unibe-ch.github.io/costs/paygo/#using-paygo-in-practice) and mention that you want a project account for the VIBE project. You may need to contact your PI and IT responsible manager of your institute to do this step.
+
+* Once your project account has been created, you will receive a unique identifier "wckey" for the VIBE project.
+
+* Contact us with your *VIBE project wckey* to activate your account.
 
 ## Getting Access
 
