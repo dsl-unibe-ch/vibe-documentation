@@ -15,7 +15,7 @@ To use the VIBE desktop you will need:
 
 * **An active UBELIX account**: You must have an active UBELIX account to access the VIBE desktop. Follow the steps outlined in the UBELIX documentation on [how to access UBELIX](https://hpc-unibe-ch.github.io/firststeps/accessUBELIX/).
 
-* **A VIBE project account**: To access the full computational resources of the VIBE desktop, you need a VIBE project account. [Get in touch](../contact.md) for additional details and costs of the service. You can still access VIBE with a free account, but your resources will be limited and subject to queue times if resources are not available.
+* **A VIBE project account**: To access the full computational resources of the VIBE desktop, you need a VIBE project account. [Get in touch](../support/contact.md) for additional details and costs of the service. You can still access VIBE with a free account, but your resources will be limited and subject to queue times if resources are not available.
 
 ## Getting Access
 
