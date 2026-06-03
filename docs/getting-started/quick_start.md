@@ -32,7 +32,7 @@ To use the VIBE desktop you will need:
 2. **VIBE system configuration form**: Once you select the VIBE desktop application, you will arrive the **system configuration form**. This is where you will define the parameters for your session. For more details on the configuration options, see the [VIBE system configuration form documentation](../in-depth-explanations/vibe_configuration_form.md). 
 
 
-The VIBE desktop is accessible in multiples ways. Adjust the form accordingly for your use case. Use the bellow table as aan example. You can find the actual limits for VIBE subscribers or the test version on the detailed VIBE system configuration form documentation under the [Instance limits](../in-depth-explanations/vibe_configuration_form.md#instance-limits) section.
+The VIBE desktop is accessible in multiples ways. Adjust the form accordingly to your use case. Use the table bellow just as an example on how to set your system configuration. The actual limits for VIBE subscribers or the test users can be found on the detailed VIBE system configuration form documentation under the [Instance limits](../in-depth-explanations/vibe_configuration_form.md#instance-limits) section.
 
 
 === "VIBE subscription"
