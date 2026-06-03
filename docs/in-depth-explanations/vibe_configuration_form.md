@@ -24,7 +24,7 @@ Here is an explanation of each field you can adjust according to your needs:
  | :------: | :---------: |
  | gratis   | Select this option for testing purposes with limited resources | 
  | invest   | Select this option if you are a VIBE users | 
- | paygo    | Select this option if you own a wc key of an independednt project. You must use your project `wc_key`[^1] | 
+ | paygo    | Select this option if you own a wc key of an independent project. You must use your project `wc_key`[^1] | 
  | teaching | Choose this option if you intend to use VIBE desktop for workshops or other teaching activities | 
 
 
@@ -37,7 +37,7 @@ In this filed you can introduce your `wc_key` to launch the VIBE desktop ona Pay
 
 Depending on the type of account you selected, different Quality of Service (QoS) options are available. Your QoS options will be displayed automatically as soon as you have picked your account. The VIBE users QoS `job_gpu_vibe` will be assigned automatically upon selection of the `invest` account. The VIBE desktop can run on other QoS, but currently is supported in GPU partitions only, that means that you need to select the correct account and QoS that runs on GPU nodes.
 
-VIBE subscribers have the highest QoS when requesting resources for the virtual the desktop. This mean that VIBE users benefit from the highest priority in allocating dedicated VIBE's project hardware and the shortest  waiting time to launch your session instance. Note that VIBE hardware might be used in another QoS such as the preemptible queue. If this is the case, a minimum idle time of (few minutes) is needed to relocate such resources to your session. 
+VIBE subscribers have the highest QoS when requesting resources for the virtual the desktop. This mean that VIBE users benefit from the highest priority in allocating dedicated VIBE's project hardware and the shortest  waiting time to launch your session instance. Note that VIBE hardware might be used in another QoS such as the preemptable queue. If this is the case, a minimum idle time of (few minutes) is needed to relocate such resources to your session. 
 
 Additional details on QoS and their usage can be found in the [UBELIX documentation on QoS](https://hpc-unibe-ch.github.io/runjobs/partitions/#qos).
 
@@ -82,12 +82,34 @@ If your session is queued for some time, you can provide a valid email address t
 
 The current maximum instance size for VIBE users depend on which GPU you select. The table bellow displays the configuration limits for the VIBE dedicated hardware:
 
- | GPU type  | Number of cores | RAM size (GB) per graphic card | number of GPUs |
- | :------ : | :-------------: | :----------------------------: | :------------: |
- | RTX 4090  | 16 | 90 | 4  |
- | RTX 6000 MIG 24G | 8 | 90 | 4 |
 
-For other hardware, the limits defined by UBELIX apply.
+
+=== "VIBE subscription"
+
+    |  GPU type        | Number of cores | RAM size (GB) per graphic card | number of GPUs | Time in hours |
+    | :------------- : | :-------------: | :----------------------------: | :------------: | :-----------: |
+    |      RTX 4090    |        16       |            90                  |         4      |       24      |
+    | RTX 6000 MIG 24G |        8        |            90                  |         4      |       24      |
+
+
+=== "VIBE test (Available only temporary)"
+    
+    1. Using preemptable queue: 1 hour per session and a max of 4 GPUs. All GPUs listed on the UBELIX, based on availability. The same RAM and CPU usage limits defined by UBELIX apply. 
+
+    2. Using your own wckey: 1 hour per session and a max of 4 GPUs. the GPUs you have access to from your wckey project. The same RAM and CPU usage limits defined by UBELIX apply. 
+
+<!-- === "hardware"
+
+    |  GPU type        | Number of cores | RAM size (GB) per graphic card | number of GPUs | Time in hours |
+    | :------------- : | :-------------: | :----------------------------: | :------------: | :-----------: |
+    |      RTX 3090    |        4        |            60                  |        16      |        1      |
+    |      RTX 4090    |        16       |            90                  |         4      |        1      |
+    | RTX 6000 MIG 24G |        8        |            90                  |         4      |        1      |
+    |     A100         |        20       |            80                  |         1      |        1      |
+    |     H100         |        16       |            90                  |         1      |        1      |
+    |     H200         |        16       |            90                  |         1      |        1      | -->
+
+
 
 ---
 
@@ -97,4 +119,4 @@ VIBE offers by default the same storage capacity offered by UBELIX. Read more on
 
 
 
-[^1]: For more details, refer to the [Pay-as-you-go (PAYG) Scheme](https://hpc-unibe-ch.github.io/costs/payg/) from UBELIX.
+[^1]: For more details, refer to the [Pay-as-you-go (PAYGO) Scheme](https://hpc-unibe-ch.github.io/costs/payg/) from UBELIX.
