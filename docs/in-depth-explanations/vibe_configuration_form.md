@@ -2,9 +2,9 @@
 
 ## Overview
 
-The VIBE configuration form allows you to customize the features of your VIBE desktop instance, including resource allocation and session duration.
+The VIBE configuration form allows you to customize your VIBE desktop instance, including resource allocation and session duration.
 
-The fields displayed in the form are dynamically generated and the options offered change accordingly on what type of resources are available for the account you choose. That means that not all resources are always available for all type of accounts. For not VIBE users, UBELIX cost and billing scheme applies including the free tiers. Note that free tiers may be use only for testing purpose and it comes with limited resources and support.
+The form fields are dynamically generated. The available options depend on the type of resources associated with the account you select. This means that not all resources are available for all account types. For non-VIBE users, the UBELIX cost and billing scheme applies, including free tiers. Note that free tiers are intended for testing purposes only and come with limited resources and support.
 
 
 <!-- ![vibe_menu_application_list](../assets/images/vibe_menu_application_list.png) -->
@@ -23,7 +23,7 @@ Here is an explanation of each field you can adjust according to your needs:
  | Account  | Description | 
  | :------: | :---------: |
  | gratis   | Select this option for testing purposes with limited resources | 
- | invest   | Select this option if you are a VIBE users | 
+ | invest   | Select this option if you are a VIBE user | 
  | paygo    | Select this option if you own a wc key of an independent project. You must use your project `wc_key`[^1] | 
  | teaching | Choose this option if you intend to use VIBE desktop for workshops or other teaching activities | 
 
@@ -31,19 +31,19 @@ Here is an explanation of each field you can adjust according to your needs:
 
 ### wckey
 
-In this filed you can introduce your `wc_key` to launch the VIBE desktop ona Pay-Go basis with your project assigned resources. You must have an UBELIX project `wc_key` to use this option. 
+Enter your `wc_key` here to launch the VIBE desktop on a Pay-Go basis using your project's allocated resources. You must have an UBELIX project `wc_key` to use this option.
 
 ### QoS
 
-Depending on the type of account you selected, different Quality of Service (QoS) options are available. Your QoS options will be displayed automatically as soon as you have picked your account. The VIBE users QoS `job_gpu_vibe` will be assigned automatically upon selection of the `invest` account. The VIBE desktop can run on other QoS, but currently is supported in GPU partitions only, that means that you need to select the correct account and QoS that runs on GPU nodes.
+Depending on the account type you selected, different Quality of Service (QoS) options are available. Your QoS options are displayed automatically once you have picked an account. The VIBE QoS `job_gpu_vibe` is assigned automatically when you select the `invest` account. The VIBE desktop can run on other QoS, but is currently supported on GPU partitions only. You must select an account and QoS that targets GPU nodes.
 
-VIBE subscribers have the highest QoS when requesting resources for the virtual the desktop. This mean that VIBE users benefit from the highest priority in allocating dedicated VIBE's project hardware and the shortest  waiting time to launch your session instance. Note that VIBE hardware might be used in another QoS such as the preemptable queue. If this is the case, a minimum idle time of (few minutes) is needed to relocate such resources to your session. 
+VIBE subscribers have the highest QoS when requesting resources for the virtual desktop. This means VIBE users benefit from the highest priority for allocating dedicated VIBE hardware and the shortest waiting time to start their session. Note that VIBE hardware may be used by another QoS, such as the preemptable queue. If this is the case, a brief idle period (a few minutes) is needed to reclaim those resources for your session.
 
 Additional details on QoS and their usage can be found in the [UBELIX documentation on QoS](https://hpc-unibe-ch.github.io/runjobs/partitions/#qos).
 
 ### GPU type
 
-You can choose for the different GPUs available. The VIBE's dedicated graphic cards are `RTX 4090` and `RTX 6000 MIG 24G`. Use any of this hardware if you are on the VIBE user's QoS. You may use another cards if you run the VIBE desktop on a different QoS.
+Select from the available GPUs. VIBE's dedicated graphics cards are the `RTX 4090` and `RTX 6000 MIG 24G`. Use either of these if you are on the VIBE QoS. Other cards may be used if you run the VIBE desktop on a different QoS.
 
 
 ### Instance Size
@@ -60,7 +60,7 @@ You can choose for the different GPUs available. The VIBE's dedicated graphic ca
 
 ### Number of GPUs
 
-select here the number of GPUs you plan to use. By default there is one GPU assigned to your session. If you are not sure about how many GPUs to use or how large your instance should be for your task, use this [guide](../how-to-guides/determine-your-resource-needs.md) to determine your resources needs.
+Select the number of GPUs you plan to use. By default, one GPU is assigned to your session. If you are unsure how many GPUs to use or how large your instance should be, use this [guide](../how-to-guides/determine-your-resource-needs.md) to determine your resource needs.
 
 ### Number of hours
 
@@ -68,7 +68,7 @@ Choose the time allocated for your VIBE session.
 
 ### Session Configuration
 
-By changing the "Standard" session configuration, you could customize your session by for instance adding environmental variables or loading custom modules. This option is recommended only for advanced user.
+By changing the "Standard" session configuration, you can customize your session — for example, by adding environment variables or loading custom modules. This option is recommended for advanced users only.
 
 
 !!! Warning
@@ -80,7 +80,7 @@ If your session is queued for some time, you can provide a valid email address t
 
 ## Instance limits
 
-The current maximum instance size for VIBE users depend on which GPU you select. The table bellow displays the configuration limits for the VIBE dedicated hardware:
+The maximum instance size for VIBE users depends on the GPU you select. The table below displays the configuration limits for VIBE dedicated hardware:
 
 
 
@@ -92,11 +92,11 @@ The current maximum instance size for VIBE users depend on which GPU you select.
     | RTX 6000 MIG 24G |        8        |            90                  |         4      |       24      |
 
 
-=== "VIBE test (Available only temporary)"
-    
-    1. Using preemptable queue: 1 hour per session and a max of 4 GPUs. All GPUs listed on the UBELIX, based on availability. The same RAM and CPU usage limits defined by UBELIX apply. 
+=== "VIBE test (Temporarily available only)"
 
-    2. Using your own wckey: 1 hour per session and a max of 4 GPUs. the GPUs you have access to from your wckey project. The same RAM and CPU usage limits defined by UBELIX apply. 
+    1. Using the preemptable queue: 1 hour per session, max 4 GPUs. Any GPU listed on UBELIX, subject to availability. Standard UBELIX RAM and CPU limits apply.
+
+    2. Using your own wckey: 1 hour per session, max 4 GPUs. GPUs are limited to those accessible from your wckey project. Standard UBELIX RAM and CPU limits apply.
 
 <!-- === "hardware"
 
