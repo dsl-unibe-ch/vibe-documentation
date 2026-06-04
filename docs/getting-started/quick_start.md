@@ -15,7 +15,15 @@ To use the VIBE desktop you will need:
 
 * **An active UBELIX account**: You must have an active UBELIX account to access the VIBE desktop. Follow the steps outlined in the UBELIX documentation on [how to access UBELIX](https://hpc-unibe-ch.github.io/firststeps/accessUBELIX/).
 
-* **A VIBE project account**: To access the full computational resources of the VIBE desktop, you need a VIBE project account. [Get in touch](../contact.md) for additional details and costs of the service. You can still access VIBE with a free account, but your resources will be limited and subject to queue times if resources are not available.
+* **A VIBE project account**: To access the full computational resources of the VIBE desktop, you need a VIBE project account.
+
+### How do I get a VIBE project account?
+
+* Follow the instructions on [how to get a PAYGO account in UBELIX](https://hpc-unibe-ch.github.io/costs/paygo/#using-paygo-in-practice) and mention that you want a project account for the VIBE project. You may need to contact your PI and IT responsible manager of your institute to do this step.
+
+* Once your project account has been created, you will receive a unique identifier "wckey" for the VIBE project.
+
+* Contact us with your *VIBE project wckey* to activate your account.
 
 ## Getting Access
 
@@ -24,28 +32,24 @@ To use the VIBE desktop you will need:
 2. **VIBE system configuration form**: Once you select the VIBE desktop application, you will arrive the **system configuration form**. This is where you will define the parameters for your session. For more details on the configuration options, see the [VIBE system configuration form documentation](../in-depth-explanations/vibe_configuration_form.md). 
 
 
-The VIBE desktop is accessible in multiples ways. Adjust the form accordingly.
+The VIBE desktop is accessible in multiples ways. Adjust the form accordingly to your use case. Use the table bellow just as an example on how to set your system configuration. The actual limits for VIBE subscribers or the test users can be found on the detailed VIBE system configuration form documentation under the [Instance limits](../in-depth-explanations/vibe_configuration_form.md#instance-limits) section.
 
 
 === "VIBE subscription"
     
-    | Account   | wckey   |      QoS       |   GPU Type        |   Instance Size |  Time limit in hours  |
+    | Account   | wckey   |      QoS       |   GPU Type        |   Instance Size |  Time in hours  |
     | :-------: | :-----: | :------------: | :---------------: | :-------------: | :-------------------: |
     |   invest  |   -     | job_gpu_vibe   | RTX 6000 MIG 24gb |       Medium    |           1           |
     
 
 === "Test version (Available only temporary)"
     
-    | Account   | wckey   |      QoS            |   GPU Type |   Instance Size |  Time limit in hours  |
-    | :-------: | :-----: | :-----------------: | :--------: | :-------------: | :-------------------: |
-    |   gratis  |   -     | job_gpu_preemptable |   RTX 4090 |       Medium    |           1           |
+    | Account   |           wckey.        |      QoS            |   GPU Type |   Instance Size |  Time in hours  |
+    | :-------: | :---------------------: | :-----------------: | :--------: | :-------------: | :-------------------: |
+    |   gratis  |             -           | job_gpu_preemptable |   RTX 4090 |       Medium    |           1           |
+    |   paygo   | `<your_project_wc_key>` |       job_gpu       |   RTX 4090 |       Medium    |           1           |
 
 
-=== "Paygo (You own a 'wc' project key)"
-    
-    | Account   | wckey                   |      QoS       |   GPU Type |   Instance Size |  Time limit in hours  |
-    | :-------: | :---------------------: | :------------: | :--------: | :-------------: | :-------------------: |
-    |   paygo   | `<your_project_wc_key>` |     job_gpu    |   RTX 4090 |       Medium    |           1           |
 
 
 !!! types warning "Test version only available for short period"
