@@ -26,7 +26,7 @@ If restarting the session does not resolve your issue, you can try starting a cl
 
 If the issue still persists, you can try resetting your VIBE Desktop user profile. This is done by deleting the correct folder in your home directory, so the VIBE Desktop will create a new one during the next start.
 
-!!! CAUTION
+!!! warning
     Make sure that you select / delete the correct folder.
     Deleting the profile resets all custom settings of the desktop
 
@@ -36,9 +36,9 @@ If the issue still persists, you can try resetting your VIBE Desktop user profil
 - Select the 'Home Directory'
 - From the list, find the folder named '.vibe' and click on it to open it
 - In it, you find the user profiles for each VIBE Desktop stage that you have started in the past:
-  - vibe-desktop for the productive Desktop (default)
-  - vibe-desktop-demo for the demo version
-  - vibe-desktop-test for the testing version
+    - vibe-desktop for the productive Desktop (default)
+    - vibe-desktop-demo for the demo version
+    - vibe-desktop-test for the testing version
 - Select the folder of the VIBE Desktop stage which has the error by ticking the box next to it
 - Click on the 'Delete' button on the top right
 
@@ -72,7 +72,7 @@ It may help to restart the VIBE Desktop session. Follow the instructions above f
 
 ### Remove the Applications local files
 
-!!! CAUTION
+!!! warning
     Deleting the local files of the application will most likely revert all configuration of that application to default!
 
 Most applications store user data locally in your home directory. The exact path differs by application. Check the documentation of the application to find the correct path, remove the folder and try again.
