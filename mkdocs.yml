@@ -27,6 +27,7 @@ nav:
     - VIBE system configuration: in-depth-explanations/vibe_configuration_form.md
     - Launching Applications from the Terminal: in-depth-explanations/launching-applications-from-the-terminal.md 
   - Support:
+    - First Aid: support/first_aid.md
     - Get in touch: support/contact.md
     - Known limitations: support/known_limitations.md
     - FAQ: support/faq.md
