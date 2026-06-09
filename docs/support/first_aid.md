@@ -26,9 +26,9 @@ If restarting the session does not resolve your issue, you can try starting a cl
 
 If the issue still persists, you can try resetting your VIBE Desktop user profile. This is done by deleting the correct folder in your home directory, so the VIBE Desktop will create a new one during the next start.
 
-> [!CAUTION]
-> Make sure that you select / delete the correct folder.
-> Deleting the profile resets all custom settings of the desktop
+!!! CAUTION
+    Make sure that you select / delete the correct folder.
+    Deleting the profile resets all custom settings of the desktop
 
 - Make sure you have no session of the VIBE Desktop running
 - Got to the Open OnDemand interface
@@ -72,8 +72,8 @@ It may help to restart the VIBE Desktop session. Follow the instructions above f
 
 ### Remove the Applications local files
 
-> [!CAUTION]
-> Deleting the local files of the application will most likely revert all configuration of that application to default!
+!!! CAUTION
+    Deleting the local files of the application will most likely revert all configuration of that application to default!
 
 Most applications store user data locally in your home directory. The exact path differs by application. Check the documentation of the application to find the correct path, remove the folder and try again.
 
