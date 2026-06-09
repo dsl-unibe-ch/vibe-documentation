@@ -1,6 +1,6 @@
 # First Aid
 
-If something is not working as expected, please try the following steps before contacting the VIBE support. First, determine if the issue affects only a specific application or the VIBE Desktop itself. Then, follow the chapters in order.
+If something is not working as expected, please try the following steps before contacting the VIBE support. First, determine if the issue affects only a specific application or the VIBE Desktop itself. Then, follow the chapters for that component in order.
 
 ## VIBE Desktop
 
@@ -27,8 +27,8 @@ If restarting the session does not resolve your issue, you can try starting a cl
 If the issue still persists, you can try resetting your VIBE Desktop user profile. This is done by deleting the correct folder in your home directory, so the VIBE Desktop will create a new one during the next start.
 
 !!! warning
-    Make sure that you select / delete the correct folder.
-    Deleting the profile resets all custom settings of the desktop
+    Make sure that you select / delete the correct folder.  
+    Deleting the profile resets all custom settings of the desktop.
 
 - Make sure you have no session of the VIBE Desktop running
 - Got to the Open OnDemand interface
