@@ -1,14 +1,5 @@
-
 # Contact
 
+### Get in touch for additional information or further support.
 
-**Guillaume Witz**
-
-email: [guillaume.witz@unibe.ch](mailto:guillaume.witz@unibe.ch)
-
-
-**Ruben Lopez**
-
-email: [ruben.lopez@unibe.ch](mailto:ruben.lopez@unibe.ch)
-
-
+email: [info.vibe@unibe.ch](mailto:info.vibe@unibe.ch)
