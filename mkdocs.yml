@@ -22,6 +22,7 @@ nav:
   - Examples:
     - Overview: examples/examples_overview.md
     - Segment and track cells: examples/examples_cell_tracking.md
+    - Trackmate + Cellpose: examples/examples_trackmate_cellpose.md
     - Deconvolution with Huygens: examples/examples_deconvolution_huygens.md
   - In-Depth Explanations:
     - VIBE system configuration: in-depth-explanations/vibe_configuration_form.md
