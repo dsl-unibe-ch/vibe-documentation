@@ -70,12 +70,21 @@ Hint: Use fiji to accomplish this task.
 - Drag and drop one of the images we save in the previous step.
 - Get familiar with the application and explore what you can do there. The Help menu is a good place to start.
 
-
 ## Correct annotations and train the custom model
 
+- On the "Segmentation" widget, click on run CPSAM. Is the result of the segmentation better now?
+- Try to manually correct the mask that were wrongly segmented. `ctrl + click` will delete labels and `right click` will add new ones. 
+- Repeat this step for each training image.
+- Once you are satisfied, start the retraining of the model by clicking on: `Model > Train new model with image+mask in folder`. We can leave untouched the default parameters, just change the model name to something you can remember. 
+- Click OK and wait a moment until the training is finished. This may take a bit of time. You can see the evolution of the training on the terminal window. The whole process is shown in the video bellow.
+
+<video controls loop muted autoplay>
+ <source src="../assets/videos/cellpose_training.webm" type="video/webm">
+</video>
 
 ## Export model
 
+- The trained model are automatically saved on the same folder as the training. Find your model by the name you saved it with. You will need it for the next step.
 
 ## Re-run TrackMate with custom model and asses results
 
