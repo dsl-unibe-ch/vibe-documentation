@@ -66,6 +66,10 @@ Hint: Use fiji to accomplish this task.
 
 ## Open training images and interact with cellpose
 
+- Launch the cellpose application. Go to `Applications > VIBE > VIBE Applications > cellpose > cellpose (cellpose-gui-4.0.8) [VIBE]`
+- Drag and drop one of the images we save in the previous step.
+- Get familiar with the application and explore what you can do there. The Help menu is a good place to start.
+
 
 ## Correct annotations and train the custom model
 
