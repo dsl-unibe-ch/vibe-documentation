@@ -60,7 +60,7 @@ While the first results from the segmentation are very good, some frames were no
 
 ## Pick sample images for training
 
-From the previous step, please select 3 frames where the segmentation was not successfully and save them  in your project folder as individual images.
+From the previous step, please select 3 frames where the segmentation was not successfully achieved and save them in a new folder from your project folder as individual images, call this folder "train_dataset".
 
 Hint: Use fiji to accomplish this task.
 
