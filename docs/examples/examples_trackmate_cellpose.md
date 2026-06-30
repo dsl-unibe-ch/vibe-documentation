@@ -4,12 +4,22 @@
 
 In this example, we will try to track cells from a challenging dataset. This data sample consist of collective cell migration from Glioblastoma-astrocytoma [^1]. The sample here was imaged using bright-field microscopy and expose complex shape and changes in contrast along the time series. This example is from the Trackmate Fiji Plugin and you can read more about the original workflow [here](https://imagej.net/plugins/trackmate/detectors/trackmate-cellpose#tracking-cells-stained-for-cytoplam-with-cellpose).
 
-Our final goal is to successfully segment and track these cells. First we will try to use the default segmentation selector from Trackmate and asses the quality of the segmentation. Then We will train our custom deep learning model using cellpose and SAM[^2][^3][^4][^5] as starting points.
+Our final goal is to successfully segment and track these cells. First we will try to use the default segmentation selector from Trackmate and asses the quality of the segmentation. Then, we will train our custom deep learning model using cellpose and SAM[^2][^3][^4][^5]. Finally we will use oru custom model to run the segmentation step within trackmate and further run the tracking of the cells.
 
 Let's get started.
 
 
 ## Open and visualize the dataset
+
+### Download the dataset
+
+- Launch your VIBE session.
+- Open the browser and download the dataset for this tutorial from zenodo using this [link](https://doi.org/10.5281/zenodo.5863317).
+- Create a folder for this project and save your dataset there.
+- Try to decompress your dataset using the peaZip utility. You will find it in the VIBE desktop menu under `Application > VIBE > VIBE Applications > peaZip`.
+
+### Visualize the dataset
+
 
 
 ## Running Trackmate on samples
