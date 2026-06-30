@@ -88,9 +88,38 @@ Hint: Use fiji to accomplish this task.
 
 ## Re-run TrackMate with custom model and asses results
 
+- Go back to the fiji-TrackMate app and step back until the "Cellpose-SAM selector" windows.
+- Instead of using a pretrained model, pick the option of "Path to a custom model" and select the model you saved in the precious step.
+- Go on the frame number 17th and run the preview button. Does it perform better than before?
+- Continue the wizard by clicking next. Wait until the model do the segmentation on the full image sequence. Then on the "Set filters on spots" windows inspect the results of the new segmentation. How are the frames that failed previously to segment the default model?
+- Click next and continue the wizard. On the "Select a tracker" window, pick the "Simple LAP tracker" and click next.
+- As settings use:
+
+| Setting | Value |
+|:--------|:-----:|
+| Linking max distance | 60 µm |
+| Gap-closing max distance | 60 µm |
+| Gap-closing max frame gap | 10 |
+
+### Adjust display settings
+
+- Select next until you arrive to the "Display options" window. Click on edit settings and adjust the following settings:
+ on the spots filed:
+    - enable draw spots as ROIs
+    - set spot alpha transparency to 0.3
+ on the tracks filed:
+    - track display mode: "Show track backward in time
+ on the general filed:
+    - line thickness: 2
+- close the window and click next.
 
 
-## Export video of tracks
+<video controls loop muted autoplay>
+ <source src="../assets/videos/final_tracks_results.webm" type="video/webm">
+</video>
+
+
+## Export video of cell tracks
 
 
 
