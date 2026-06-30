@@ -16,10 +16,17 @@ Let's get started.
 - Launch your VIBE session.
 - Open the browser and download the dataset for this tutorial from zenodo using this [link](https://doi.org/10.5281/zenodo.5863317).
 - Create a folder for this project and save your dataset there.
-- Try to decompress your dataset using the peaZip utility. You will find it in the VIBE desktop menu under `Application > VIBE > VIBE Applications > peaZip`.
+- Try to decompress your dataset using the peaZip utility. You will find it in the VIBE desktop menu under `Applications > VIBE > VIBE Applications > peaZip`.
 
 ### Visualize the dataset
 
+- Open the Fiji-Trackmate application via: `Applications > VIBE > VIBE Applications > fiji > fiji (fiji-trackmate-20260601) [VIBE]`
+- Drag and drop the file named `Glioblastoma_brightfield.tif` to the fiji application.
+- Explore the image: look at the bit depth, image size, dimensions, etc.
+
+<video controls loop muted autoplay>
+ <source src="../assets/videos/preview_glioblastoma.webm" type="video/webm">
+</video>
 
 
 ## Running Trackmate on samples
