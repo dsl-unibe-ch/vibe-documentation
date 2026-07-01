@@ -54,7 +54,7 @@ Open the dataset as before. Then drag and drop the segmentation tif file and the
 Once this is done open the animation plugin by going to `Plugins -> wizard (napari-animation)`. This will add a panel on the right of the viewer. You can now modify the rendering to a given state and then "save" it as a keyframe using `Capture` then change the rendering again and select another keyframe etc. The plugin will then create a smooth animation between these keyframes. You can pre-visualize this using the slider at the bottom of the panel. Finally you can export the animation as a video file using `Save Animation`. You can select the output format and the frame rate. Try to create a nice animation, just showing the dataset, the turning on separately the segmentation, zooming, rotating etc.
 
 <video controls loop muted autoplay>
- <source src="../assets/videos/rc10777_animation.webm" type="video/webm">
+ <source src="../assets/videos/rcc10777_animation.webm" type="video/webm">
 </video>
 
 [^1]: Felix Mikus, Armando Rubio Ramos, Hiral Shah, Jonas Hellgoth, Marine Olivetta, Susanne Borgers, Clémence Saint-Donat, Margarida Araújo, Chandni Bhickta, Paulina Cherek, Jone Bilbao, Estibalitz Txurruka, Yana Egli, Nikolaus Leisch, Yannick Schwab, Filip Husnik, Sergio Seoane, Ian Probert, Paul Guichard, Virginie Hamel, Gautam Dey & Omaya Dudin (2025). Image data set for "Charting the landscape of cytoskeletal diversity in microbial eukaryotes". BioStudies, S-BIAD2095. Retrieved from https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD2095
