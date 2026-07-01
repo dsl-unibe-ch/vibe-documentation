@@ -128,12 +128,30 @@ Hint: Use fiji to accomplish this task.
 
 - Close the display settings window. You should be able to see now the mask and the track overlay onto the original image as shown bellow:
 
-![](../assets/images/final_tracks_screenshot.png)
+<!-- ![](../assets/images/final_tracks_screenshot.png) -->
+
+<video controls loop muted autoplay>
+ <source src="../assets/videos/final_tracks_results.webm" type="video/webm">
+</video>
+
 
 
 ## Export video of cell tracks
 
 
+You can save the current image series with the mask and tracks as a tif file or save ot directly as a avi file.
+
+### Saving the video as a tif image
+
+- Click the next button until you reach the "Select an Action" window.
+- On the drop menu, select capture overlay.
+- Click the execute button pick the frames you want to select. Tipically you will select all of them. Click the accept button.
+- Save the new generated image as tif in your project directory. 
+
+### Saving the video as a avi video
+
+- Change the image type to RGB-color.
+- on `File > Save As`select `AVI` and chose compression type, and the frames per second. Accept adn save it to your project directory.
 
 
 
