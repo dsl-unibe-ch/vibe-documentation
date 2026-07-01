@@ -24,6 +24,7 @@ nav:
     - Segment and track cells: examples/examples_cell_tracking.md
     - Trackmate + Cellpose: examples/examples_trackmate_cellpose.md
     - Deconvolution with Huygens: examples/examples_deconvolution_huygens.md
+    - 3D feature detection with Spotiflow and nnInteractive: examples/example_spotiflow_nnInteract.md
   - In-Depth Explanations:
     - VIBE system configuration: in-depth-explanations/vibe_configuration_form.md
     - Launching Applications from the Terminal: in-depth-explanations/launching-applications-from-the-terminal.md 
