@@ -38,6 +38,8 @@ Let's now try to use the default segmentation selector from TrackMate to segment
 - On the select a detector window, use `Cellpose-SAM selector` and click next.
 - From the Cellpose-SAM selector window pick the following parameters:
 
+<div style="display: flex; justify-content: center;" markdown="1">
+
 | Setting | Value |
 |:--------|:-----:|
 | Conda environment | `Cellpose_trackM_env` |
@@ -45,6 +47,8 @@ Let's now try to use the default segmentation selector from TrackMate to segment
 | Channels | All channels |
 | GPU | Enabled |
 | Simplify contours | Enabled |
+
+</div>
 
 - Select the first frame and click the `preview` button. You should see the resulting segmentation results by drawings of cells contours as shown bellow. This is the resulting segmentation from this image frame.
 
@@ -95,11 +99,15 @@ Hint: Use fiji to accomplish this task.
 - Click next and continue the wizard. On the "Select a tracker" window, pick the "Simple LAP tracker" and click next.
 - As settings use:
 
+<div style="display: flex; justify-content: center;" markdown="1">
+
 | Setting | Value |
 |:--------|:-----:|
 | Linking max distance | 60 µm |
 | Gap-closing max distance | 60 µm |
 | Gap-closing max frame gap | 10 |
+
+</div>
 
 ### Adjust display settings
 
