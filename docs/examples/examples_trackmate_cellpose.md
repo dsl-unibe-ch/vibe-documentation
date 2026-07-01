@@ -111,20 +111,24 @@ Hint: Use fiji to accomplish this task.
 
 ### Adjust display settings
 
-- Select next until you arrive to the "Display options" window. Click on edit settings and adjust the following settings:
- on the spots filed:
-    - enable draw spots as ROIs
-    - set spot alpha transparency to 0.3
- on the tracks filed:
-    - track display mode: "Show track backward in time
- on the general filed:
-    - line thickness: 2
-- close the window and click next.
+- Select next until you arrive to the "Display options" window. Click on edit settings on top right and adjust the following settings:
+ 
+#### Spots field
 
+- Enable **Draw spots as ROIs**
+- Set **Spot alpha transparency** to **0.3**
 
-<video controls loop muted autoplay>
- <source src="../assets/videos/final_tracks_results.webm" type="video/webm">
-</video>
+#### Tracks field
+
+- Set **Track display mode** to **Show track backward in time**
+
+#### General field
+
+- Set **Line thickness** to **2**
+
+- Close the display settings window. You should be able to see now the mask and the track overlay onto the original image as shown bellow:
+
+![](../assets/images/final_tracks_screenshot.png)
 
 
 ## Export video of cell tracks
