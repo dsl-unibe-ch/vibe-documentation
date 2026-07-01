@@ -1,170 +1,226 @@
-# Cell tracking using TrackMate + Cellpose
+# Cell Tracking with TrackMate and Cellpose
 
 ## Overview
 
-In this example, we will try to track cells from a challenging dataset. This data sample consist of collective cell migration from Glioblastoma-astrocytoma [^1]. The sample here was imaged using bright-field microscopy and expose complex shape and changes in contrast along the time series. This example is from the TrackMate Fiji Plugin and you can read more about the original workflow [here](https://imagej.net/plugins/TrackMate/detectors/TrackMate-cellpose#tracking-cells-stained-for-cytoplam-with-cellpose).
+In this tutorial, you will track cells in a challenging bright-field microscopy dataset showing collective migration of glioblastoma-astrocytoma cells[^1]. Because the cells change shape and contrast over time, this dataset provides a good example of the limitations of generic segmentation models and the benefits of model fine-tuning.
 
-Our final goal is to successfully segment and track these cells. First we will try to use the default segmentation selector from TrackMate and asses the quality of the segmentation. Then, we will train our custom deep learning model using cellpose and SAM[^2][^3][^4][^5]. Finally we will use oru custom model to run the segmentation step within TrackMate and further run the tracking of the cells.
+The workflow is based on the TrackMate Cellpose tutorial, which is available on the ImageJ website [here](https://imagej.net/plugins/TrackMate/detectors/TrackMate-cellpose#tracking-cells-stained-for-cytoplam-with-cellpose).
+
+Our goal is to accurately segment and track the cells throughout the image sequence. We will first evaluate the segmentation produced by the default Cellpose-SAM[^2][^3][^4][^5] model available in TrackMate[^6][^7]. Next, we will fine-tune the model using a small set of manually corrected images. Finally, we will use the newly trained model in TrackMate to improve segmentation quality and generate more reliable cell tracks.
 
 Let's get started.
 
+---
 
 ## Open and visualize the dataset
 
 ### Download the dataset
 
-- Launch your VIBE session.
-- Open the browser and download the dataset for this tutorial from zenodo using this [link](https://doi.org/10.5281/zenodo.5863317).
-- Create a folder for this project and save your dataset there.
-- Try to decompress your dataset using the peaZip utility. You will find it in the VIBE desktop menu under `Applications > VIBE > VIBE Applications > peaZip`.
+* Start your VIBE session.
+* Open Firefox and download the tutorial dataset from Zenodo using this [link](https://doi.org/10.5281/zenodo.5863317).
+* Create a project folder and save the downloaded archive there.
+* Extract the archive using **PeaZip**, available from:
+
+`Applications → VIBE → VIBE Applications → PeaZip`
 
 ### Visualize the dataset
 
-- Open the Fiji-TrackMate application via: `Applications > VIBE > VIBE Applications > fiji > fiji (fiji-TrackMate-20260601) [VIBE]`
-- Drag and drop the file named `Glioblastoma_brightfield.tif` to the fiji application.
-- Explore the image: look at the bit depth, image size, dimensions, etc.
+* Open **Fiji-TrackMate** from:
+
+`Applications → VIBE → VIBE Applications → Fiji → Fiji (fiji-TrackMate-20260601) [VIBE]`
+
+* Drag and drop the file **Glioblastoma_brightfield.tif** into Fiji.
+* Explore the dataset. Inspect the image dimensions, bit depth, number of frames, and other metadata.
 
 <video controls loop muted autoplay>
  <source src="../assets/videos/preview_glioblastoma.webm" type="video/webm">
 </video>
 
+---
 
-## Running TrackMate on samples
+## Run TrackMate with the default Cellpose-SAM model
 
-Let's now try to use the default segmentation selector from TrackMate to segment the cells before doing the tracking.
+Let's begin by evaluating the segmentation produced by the default Cellpose-SAM model before performing any training.
 
-- Launch TrackMate from fiji via `PLugins > Tracking > TrackMate`.
-- TrackMate will try to indentify the image metadata. Use the default settings and click next.
-- On the select a detector window, use `Cellpose-SAM selector` and click next.
-- From the Cellpose-SAM selector window pick the following parameters:
+* Open **TrackMate** from:
+
+`Plugins → Tracking → TrackMate`
+
+* TrackMate will automatically detect the image metadata. Accept the default settings and click **Next**.
+* In the **Select a detector** window, choose **Cellpose-SAM detector** and click **Next**.
+* Configure the detector using the following settings.
 
 <div style="display: flex; justify-content: center;" markdown="1">
 
-| Setting | Value |
-|:--------|:-----:|
+| Setting           |         Value         |
+| :---------------- | :-------------------: |
 | Conda environment | `Cellpose_trackM_env` |
-| Pretrained model | `cellpose-SAM` |
-| Channels | All channels |
-| GPU | Enabled |
-| Simplify contours | Enabled |
+| Pretrained model  |     `cellpose-SAM`    |
+| Channels          |      All channels     |
+| GPU               |        Enabled        |
+| Simplify contours |        Enabled        |
 
 </div>
 
-- Select the first frame and click the `preview` button. You should see the resulting segmentation results by drawings of cells contours as shown bellow. This is the resulting segmentation from this image frame.
+* Move to the first frame and click **Preview**.
+* The detected cell contours should appear as shown below.
 
 ![](../assets/images/preview_segmentation_csam.png)
 
-- Click the next button. Now the segmentation will run on the full time series and may take a bit of time. Wait until is finished and click the next button again. 
-- Let the default values for the "Initial Threshold" window and click next.
-- You will land on the "Set filters on spots" window. Here scroll up and down to explore the results of the segmentation for each frame. Can you asses the quality of the segmentation?
+* Click **Next** to run segmentation on the entire image sequence. This process may take a few minutes.
+* Once segmentation is complete, click **Next** again.
+* Keep the default settings in the **Initial Threshold** window and click **Next**.
+* In the **Set filters on spots** window, scroll through the frames to inspect the segmentation results.
 
+How would you assess the segmentation quality?
 
-While the first results from the segmentation are very good, some frames were not properly segmented. The next task is to pick 3 frames from the series where the segmentation fails and use them to fine tune or retrain the cellpose-SAM (CPSAM) model.
+Although many frames are segmented accurately, several frames contain missing or incorrect segmentations. In the next section, you will select a few representative examples and use them to fine-tune the Cellpose-SAM model.
 
+---
 
-## Pick sample images for training
+## Select training images
 
-From the previous step, please select 3 frames where the segmentation was not successfully achieved and save them in a new folder from your project folder as individual images, call this folder "train_dataset".
+Identify three frames where the segmentation performs poorly.
 
-Hint: Use fiji to accomplish this task.
+Save each frame as an individual image in a new folder inside your project directory named:
 
-## Open training images and interact with cellpose
+`train_dataset`
 
-- Launch the cellpose application. Go to `Applications > VIBE > VIBE Applications > cellpose > cellpose (cellpose-gui-4.0.8) [VIBE]`
-- Drag and drop one of the images we save in the previous step.
-- Get familiar with the application and explore what you can do there. The Help menu is a good place to start.
+**Tip:** Fiji provides several ways to extract individual frames from an image sequence.
 
-## Correct annotations and train the custom model
+---
 
-- On the "Segmentation" widget, click on run CPSAM. Is the result of the segmentation better now?
-- Try to manually correct the mask that were wrongly segmented. `ctrl + click` will delete labels and `right click` will add new ones. 
-- Repeat this step for each training image.
-- Once you are satisfied, start the retraining of the model by clicking on: `Model > Train new model with image+mask in folder`. We can leave untouched the default parameters, just change the model name to something you can remember. 
-- Click OK and wait a moment until the training is finished. This may take a bit of time. You can see the evolution of the training on the terminal window. The whole process is shown in the video bellow.
+## Open the training images in Cellpose
+
+* Open **Cellpose** from:
+
+`Applications → VIBE → VIBE Applications → Cellpose → Cellpose (cellpose-gui-4.0.8) [VIBE]`
+
+* Drag one of the training images into the application.
+* Take a few minutes to explore the interface. The **Help** menu is a good place to start.
+
+---
+
+## Correct the annotations and train a custom model
+
+* In the **Segmentation** panel, click **Run CPSAM**.
+* Compare the segmentation with the original image.
+* Correct any incorrectly segmented cells.
+
+Useful shortcuts:
+
+* **Ctrl + Left Click** — Delete a label
+
+* **Right Click** — Add a new label
+
+* Repeat the process for each training image.
+
+* Once all images have been corrected, start model training by selecting:
+
+`Model → Train new model with image + mask in folder`
+
+* Leave the default training parameters unchanged.
+* Enter a memorable name for your model.
+* Click **OK** and wait for training to complete. Progress is displayed in the terminal window.
+
+The complete process is illustrated below.
 
 <video controls loop muted autoplay>
  <source src="../assets/videos/cellpose_training.webm" type="video/webm">
 </video>
 
-## Export model
+---
 
-- The trained model are automatically saved on the same folder as the training. Find your model by the name you saved it with. You will need it for the next step.
+## Export the trained model
 
-## Re-run TrackMate with custom model and asses results
+The trained model is automatically saved in the training folder.
 
-- Go back to the fiji-TrackMate app and step back until the "Cellpose-SAM selector" windows.
-- Instead of using a pretrained model, pick the option of "Path to a custom model" and select the model you saved in the precious step.
-- Go on the frame number 17th and run the preview button. Does it perform better than before?
-- Continue the wizard by clicking next. Wait until the model do the segmentation on the full image sequence. Then on the "Set filters on spots" windows inspect the results of the new segmentation. How are the frames that failed previously to segment the default model?
-- Click next and continue the wizard. On the "Select a tracker" window, pick the "Simple LAP tracker" and click next.
-- As settings use:
+Locate the model file using the name you provided during training. You will use it in the next section.
+
+---
+
+## Re-run TrackMate using the custom model
+
+Return to **Fiji-TrackMate** and navigate back to the **Cellpose-SAM detector** settings.
+
+* Instead of selecting a pretrained model, choose **Path to a custom model**.
+* Browse to the model you trained in the previous step.
+* Move to frame **17** and click **Preview**.
+
+Does the new model produce a better segmentation?
+
+* Click **Next** to run segmentation on the full image sequence.
+* Once complete, inspect the segmentation in the **Set filters on spots** window.
+
+Compare the frames that previously failed with the new results. Has the segmentation improved?
+
+Continue through the wizard until you reach the **Select a tracker** window.
+
+Choose **Simple LAP tracker** and use the following parameters.
 
 <div style="display: flex; justify-content: center;" markdown="1">
 
-| Setting | Value |
-|:--------|:-----:|
-| Linking max distance | 60 µm |
-| Gap-closing max distance | 60 µm |
-| Gap-closing max frame gap | 10 |
+| Setting                   | Value |
+| :------------------------ | :---: |
+| Linking max distance      | 60 µm |
+| Gap-closing max distance  | 60 µm |
+| Gap-closing max frame gap |   10  |
 
 </div>
 
-### Adjust display settings
+---
 
-- Select next until you arrive to the "Display options" window. Click on edit settings on top right and adjust the following settings:
- 
-#### Spots field
+### Adjust the display settings
 
-- Enable **Draw spots as ROIs**
-- Set **Spot alpha transparency** to **0.3**
+Continue clicking **Next** until you reach the **Display options** window.
 
-#### Tracks field
+Click **Edit settings** and configure the following options.
 
-- Set **Track display mode** to **Show track backward in time**
+#### Spots
 
-#### General field
+* Enable **Draw spots as ROIs**
+* Set **Spot alpha transparency** to **0.3**
 
-- Set **Line thickness** to **2**
+#### Tracks
 
-- Close the display settings window. You should be able to see now the mask and the track overlay onto the original image as shown bellow:
+* Set **Track display mode** to **Show track backward in time**
 
-<!-- ![](../assets/images/final_tracks_screenshot.png) -->
+#### General
+
+* Set **Line thickness** to **2**
+
+Close the settings window.
+
+The segmented cell outlines and tracks should now be overlaid on the original image sequence, similar to the example below.
 
 <video controls loop muted autoplay>
  <source src="../assets/videos/final_tracks_results.webm" type="video/webm">
 </video>
 
+---
 
+## Export the tracking results
 
-## Export video of cell tracks
+You can export the tracked image sequence either as a TIFF stack or directly as an AVI movie.
 
+### Export as a TIFF stack
 
-You can save the current image series with the mask and tracks as a tif file or save ot directly as a avi file.
+* Continue clicking **Next** until you reach the **Select an Action** window.
+* From the drop-down menu, select **Capture overlay**.
+* Click **Execute**.
+* Select the frame range you want to export (typically the entire image sequence).
+* Click **OK**.
+* Save the generated TIFF stack in your project folder.
 
-### Saving the video as a tif image
+### Export as an AVI movie
 
-- Click the next button until you reach the "Select an Action" window.
-- On the drop menu, select capture overlay.
-- Click the execute button pick the frames you want to select. Tipically you will select all of them. Click the accept button.
-- Save the new generated image as tif in your project directory. 
+* Convert the image to **RGB Color**.
+* Go to:
 
-### Saving the video as a avi video
+`File → Save As → AVI`
 
-- Change the image type to RGB-color.
-- on `File > Save As`select `AVI` and chose compression type, and the frames per second. Accept adn save it to your project directory.
-
-
-
-
-
-
-
-
-
-
-
-
-
+* Select the desired compression method and frame rate.
+* Save the AVI file in your project folder.
 
 
 [^1]: Guillaume Jacquemet, Joanna W. Pylvänäinen, & Jean-Yves Tinevez. (2022). Tracking Glioblastoma-astrocytoma cells imaged in brightfield with TrackMate-Cellpose [Data set]. Zenodo. [https://doi.org/10.5281/zenodo.5863317](https://doi.org/10.5281/zenodo.5863317)
@@ -176,3 +232,7 @@ You can save the current image series with the mask and tracks as a tif file or 
 [^4]: Pachitariu, M. & Stringer, C. (2022). Cellpose 2.0: how to train your own model. Nature methods, 1-8.
 
 [^5]: Stringer, C. & Pachitariu, M. (2025). Cellpose3: one-click image restoration for improved segmentation. Nature Methods.
+
+[^6]: Tinevez, J.-Y., Perry, N., Schindelin, J., Hoopes, G. M., Reynolds, G. D., Laplantine, E., … Eliceiri, K. W. (2017). TrackMate: An open and extensible platform for single-particle tracking. Methods, 115, 80–90. [doi:10.1016/j.ymeth.2016.09.016](https://doi.org/10.1016/j.ymeth.2016.09.016)
+
+[^7]: Ershov, D., Phan, M.-S., Pylvänäinen, J. W., Rigaud, S. U., Le Blanc, L., Charles-Orszag, A., … Tinevez, J.-Y. (2022). TrackMate 7: integrating state-of-the-art segmentation algorithms into tracking pipelines. Nature Methods, 19(7), 829–832. [doi:10.1038/s41592-022-01507-1](https://doi.org/10.1038/s41592-022-01507-1)
