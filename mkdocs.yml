@@ -68,6 +68,7 @@ markdown_extensions:
   - smarty
   - tables
   - toc
+  - md_in_html
 
 # Social links bottom right
 extra:
