@@ -5,3 +5,9 @@
 VIBE currently is unable to load modules via the `lmod`, the tool that UBELIX uses to manage and change your software environment, so called modules. Find more information about the tool on the UBELIX documentation section on [Software Environments](https://hpc-unibe-ch.github.io/software/Lmod_modules/#finding-modules)
 
 If you need a specific software or environment from the UBELIX software stack that is not currently present in the VIBE desktop, please get in touch with us.
+
+## Clipboard not functional in some browser 
+
+We have experience issues using the clipboard to copy content from the host system to some browsers including **Firefox** and **Safari**. 
+
+**We recommend the Chrome browser** for the best experience using the VIBE desktop.
