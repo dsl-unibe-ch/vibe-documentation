@@ -15,3 +15,7 @@ The user experience on the VIBE desktop depends among other factors on the stabi
 ## *My session suddenly crash with message: "New connection has been rejected with reason: Authentication failed"*
 
 Sometimes when the VIBE desktop site is refreshed or let idle for a few times it could suddenly crash. This is a known issue of the VNC server trying to stablish a connection and fail on authentication. Luckily this is not shutting down your session. To reestablish your session, simply return to the OpenOnDemand site on "My Interactive Sessions" and push the blue button on your session to reestablish your active session.
+
+## *The layout and text of the VIBE desktop is too big and difficult to work with*
+
+This may be caused by the current resolution settings of your screen of your host computer. Try to increase the resolution of your screen or if this is not possible, try to use the zoom out tool from your browser.
