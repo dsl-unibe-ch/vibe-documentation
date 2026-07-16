@@ -19,3 +19,7 @@ Sometimes when the VIBE desktop site is refreshed or let idle for a few times it
 ## *The layout and text of the VIBE desktop is too big and difficult to work with*
 
 This may be caused by the current resolution settings of your screen of your host computer. Try to increase the resolution of your screen or if this is not possible, try to use the zoom out tool from your browser.
+
+## *Is it possible to mount a smb share on my VIBE session?*
+
+Unfortunately UBELIX policy restrict to mount external storage as this inherently leads to performance issues. Therefore currently data needs to be transferred in/out via either scp/rsync or through the OnDemand GUI. If users have access to research storage shares, they can also mount the share on their devices using smb and transfer data using smb to UBELIX.
