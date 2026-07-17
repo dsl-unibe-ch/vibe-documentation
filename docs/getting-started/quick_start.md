@@ -25,12 +25,17 @@ To use the VIBE desktop you will need:
 
 ## Getting Access
 
-1. Go to [https://ondemand.hpc.unibe.ch](https://ondemand.hpc.unibe.ch). In the navigation bar, click on **"My Interactive Sessions"**. You will see a list of available interactive applications such as VS Code server, Jupyter Notebook, and VIBE Desktop. Select the **VIBE Desktop**.
+1. Go to [https://ondemand.hpc.unibe.ch](https://ondemand.hpc.unibe.ch). In the navigation bar, click on **"My Interactive Sessions"**. You will see a list of available interactive applications such as VS Code server, Jupyter Notebook, and VIBE Desktop. Select the **VIBE Desktop**. The VIBE desktop is accessible in multiples ways. Currently there are 3 version of the VIBE desktop as described below:
+
+    - **VIBE Destop 2026xxxx**: This is the stable version of VIBE. Contains apps and workflows that have been partially tested by us, and we consider it "stable". Duration and system configuration can be adjusted by the user.
+    - **VIBE Desktop Demo 2026xxxx**: Session preconfigured with limited resources (4 cores, 16GB RAM, no GPU and 1 hour duration), just for people who want to have a feeling about the VIBE environment, no for serious computation. 
+    - **VIBE Desktop testing 2026xxxx**: This is the experimental version that contains new apps or features for being tested by the users before they are pushed to the stable version. Duration and system configuration can be adjusted by the user.
+
+The **VIBE Desktop Demo** is available for all all user with access on UBELIX. During the current testing period, the full VIBE Desktop versions (stable and testing) are accessible for free. Please get in touch with us if you want to try the full versions of the Desktop. 
 
 2. **VIBE system configuration form**: Once you select the VIBE desktop application, you will arrive the **system configuration form**. This is where you will define the parameters for your session. For more details on the configuration options, see the [VIBE system configuration form documentation](../in-depth-explanations/vibe_configuration_form.md). 
 
-
-The VIBE desktop is accessible in multiples ways. Adjust the form accordingly to your use case. Use the table bellow just as an example on how to set your system configuration. The actual limits for VIBE subscribers or the test users can be found on the detailed VIBE system configuration form documentation under the [Instance limits](../in-depth-explanations/vibe_configuration_form.md#instance-limits) section.
+Adjust the form accordingly to your use case. Use the table bellow just as an example on how to set your system configuration. The actual limits for VIBE subscribers or the test users can be found on the detailed VIBE system configuration form documentation under the [Instance limits](../in-depth-explanations/vibe_configuration_form.md#instance-limits) section.
 
 
 === "VIBE subscription"
