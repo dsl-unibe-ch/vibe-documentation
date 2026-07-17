@@ -35,7 +35,7 @@ The VIBE Desktop Demo is available for all all user with access on UBELIX. Durin
 
 2. **VIBE system configuration form**: Once you select the VIBE desktop application, you will arrive the **system configuration form**. This is where you will define the parameters for your session. For more details on the configuration options, see the [VIBE system configuration form documentation](../in-depth-explanations/vibe_configuration_form.md). 
 
-Adjust the form accordingly to your use case. Use the table bellow just as an example on how to set your system configuration. The actual limits for VIBE subscribers or the test users can be found on the detailed VIBE system configuration form documentation under the [Instance limits](../in-depth-explanations/vibe_configuration_form.md#instance-limits) section.
+Adjust the form accordingly to your use case. As an example, use parameters defined in the table bellow to set your system configuration.
 
 
 === "VIBE subscription"
@@ -52,7 +52,7 @@ Adjust the form accordingly to your use case. Use the table bellow just as an ex
     |   gratis  |             -           | job_gpu_preemptable |   RTX 4090 |       Medium    |           1           |
     |   paygo   | `<your_project_wc_key>` |       job_gpu       |   RTX 4090 |       Medium    |           1           |
 
-
+The actual limits for VIBE subscribers or the test users can be found on the detailed VIBE system configuration form documentation under the [Instance limits](../in-depth-explanations/vibe_configuration_form.md#instance-limits) section.
 
 
 !!! types warning "Test version only available for short period"
