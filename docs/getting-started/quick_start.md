@@ -25,17 +25,21 @@ To use the VIBE desktop you will need:
 
 ## Getting Access
 
-1. Go to [https://ondemand.hpc.unibe.ch](https://ondemand.hpc.unibe.ch). In the navigation bar, click on **"My Interactive Sessions"**. You will see a list of available interactive applications such as VS Code server, Jupyter Notebook, and VIBE Desktop. Select the **VIBE Desktop**. The VIBE desktop is accessible in multiples ways. Currently there are 3 version of the VIBE desktop as described below:
+1. Go to [https://ondemand.hpc.unibe.ch](https://ondemand.hpc.unibe.ch). In the navigation bar, click on **"My Interactive Sessions"**. You will see a list of available interactive applications such as VS Code server, Jupyter Notebook, and VIBE Desktop. Select the **VIBE Desktop**. Currently there are 3 version of the VIBE desktop available as described below:
 
-    - **VIBE Destop 2026xxxx**: This is the stable version of VIBE. Contains apps and workflows that have been partially tested by us, and we consider it "stable". Duration and system configuration (hardware) can be adjusted by the user.
+    - **VIBE Destop 2026xxxx**: This is the stable version of VIBE. Contains apps and workflows that have been partially tested by us and we consider them "stable". Duration and system configuration (hardware) can be adjusted by the user.
     - **VIBE Desktop Demo 2026xxxx**: Session preconfigured with limited resources (4 cores, 16GB RAM, no GPU and 1 hour duration), just for people who want to have a feeling about the VIBE environment, no for serious computation. 
-    - **VIBE Desktop testing 2026xxxx**: This is the experimental version that contains new apps or features for being tested by the users before they are pushed to the stable version. Duration and system configuration (hardware) can be adjusted by the user.
+    - **VIBE Desktop testing 2026xxxx**: This is the experimental version that contains new apps or features for being tested or requested by the users before they are pushed to the stable version. Duration and system configuration (hardware) can be adjusted by the user.
 
 The VIBE Desktop Demo is available for all all user with access on UBELIX. During the current testing period, **the full VIBE Desktop versions (stable and testing) are accessible for free**. Please get in touch with us if you want to try the full versions of the Desktop. 
 
-2. **VIBE system configuration form**: Once you select the VIBE desktop application, you will arrive the **system configuration form**. This is where you will define the parameters for your session. For more details on the configuration options, see the [VIBE system configuration form documentation](../in-depth-explanations/vibe_configuration_form.md). 
+!!! types warning "Test version only available for short period"
+    The test version of the desktop is free of charge and meant to be used just for testing purpose and will be available for limited period of time.
 
-Adjust the form accordingly to your use case. As an example, use parameters defined in the table bellow to set your system configuration.
+
+2. Adjust the **VIBE system configuration form**: Once you select the VIBE desktop application, you will arrive the **system configuration form**. This is where you will define the parameters for your session. For more details on the configuration options, see the [VIBE system configuration form documentation](../in-depth-explanations/vibe_configuration_form.md). 
+
+Adjust the form accordingly to your use case. As an example, use parameters defined in the table bellow to set your system configuration. Note that currently you can use the VIBE subscription account (or Queue) where you will get VIBE own dedicated resources (hardware) and no waiting time if resources are available. and a free account 
 
 
 === "VIBE subscription"
@@ -43,20 +47,20 @@ Adjust the form accordingly to your use case. As an example, use parameters defi
     | Account   | wckey   |      QoS       |   GPU Type        |   Instance Size |  Time in hours  |
     | :-------: | :-----: | :------------: | :---------------: | :-------------: | :-------------------: |
     |   invest  |   -     | job_gpu_vibe   | RTX 6000 MIG 24gb |       Medium    |           1           |
+    |   invest  |   -     | job_gpu_vibe   |     RTX 4090      |       Large     |           1           |
     
 
-=== "Test version (Available only temporary)"
+=== "no VIBE subscription (Available only temporary)"
     
-    | Account   |           wckey.        |      QoS            |   GPU Type |   Instance Size |  Time in hours  |
+    | Account   |           wckey        |      QoS            |   GPU Type |   Instance Size |  Time in hours  |
     | :-------: | :---------------------: | :-----------------: | :--------: | :-------------: | :-------------------: |
     |   gratis  |             -           | job_gpu_preemptable |   RTX 4090 |       Medium    |           1           |
     |   paygo   | `<your_project_wc_key>` |       job_gpu       |   RTX 4090 |       Medium    |           1           |
 
-The actual limits for VIBE subscribers or the test users can be found on the detailed VIBE system configuration form documentation under the [Instance limits](../in-depth-explanations/vibe_configuration_form.md#instance-limits) section.
+!!! note 
 
+    The actual limits for VIBE subscribers or the test users can be found on the detailed VIBE system configuration form documentation under the [Instance limits](../in-depth-explanations/vibe_configuration_form.md#instance-limits) section.
 
-!!! types warning "Test version only available for short period"
-    The test version of the desktop comes with limited resources and limited support. It is meant to be used just for testing purpose and will be only available for a short period of time.
 
 
 Set the system configuration of your VIBE instance by filling the form with the parameters indicated bellow:
