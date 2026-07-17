@@ -19,3 +19,8 @@ Sometimes when the VIBE desktop site is refreshed or let idle for a few times it
 ## *The layout and text of the VIBE desktop is too big and difficult to work with*
 
 This may be caused by the current resolution settings of your screen of your host computer. Try to increase the resolution of your screen or if this is not possible, try to use the zoom out tool from your browser.
+
+
+## *My application is not present in the current list of apps in VIBE, can I request to add it?*
+
+Absolutely! please reach out to the VIBE team for support on implementing your app on the platform.
