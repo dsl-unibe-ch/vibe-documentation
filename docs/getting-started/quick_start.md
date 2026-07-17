@@ -4,8 +4,6 @@ The VIBE desktop is an interactive application that runs directly in your web br
 
 This guide will walk you through the initial setup and usage of the VIBE desktop.
 
-!!! warning
-    The following description is based on the current version of the form. Please note that the content may change as the form evolves.
 
 ## What You Need
 
