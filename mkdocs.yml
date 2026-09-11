@@ -33,6 +33,11 @@ nav:
     - Get in touch: support/contact.md
     - Known limitations: support/known_limitations.md
     - FAQ: support/faq.md
+  - Release Notes:
+    - Overview: release-notes/release_notes_overview.md
+    - v20260511:
+      - VIBE Applications v20260511: release-notes/v20260511/release_notes_vibe_applications_v20260511.md
+      - VIBE Desktop v20260511: release-notes/v20260511/release_notes_vibe_desktop_v20260511.md
 
 # Configuration
 theme:
