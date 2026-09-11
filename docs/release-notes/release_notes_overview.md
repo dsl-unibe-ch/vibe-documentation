@@ -19,5 +19,5 @@ Both repositories share the same release tag. Since vibe-applications changes mo
 
 | Repository | DOI |
 | --- | --- |
-| vibe-desktop | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22096511.svg)](https://doi.org/10.5281/zenodo.22096511) |
+| vibe-desktop | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22096552.svg)](https://doi.org/10.5281/zenodo.22096552) |
 | vibe-applications | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22096511.svg)](https://doi.org/10.5281/zenodo.22096511) |
