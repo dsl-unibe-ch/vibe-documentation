@@ -1,7 +1,9 @@
 # VIBE Applications v20260615 — First Public Release
 
 **Release Date**: May 2026
+
 **Repository**: vibe applications
+
 **Tag**: v20260615
 
 We are excited to announce the first official release of the VIBE Applications repository, containing the full catalog of Apptainer container definitions that power the VIBE Desktop virtual research workstation.

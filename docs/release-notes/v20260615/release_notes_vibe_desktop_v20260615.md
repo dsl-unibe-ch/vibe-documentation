@@ -1,7 +1,9 @@
 # VIBE Desktop 20260615 — First Public Release
 
 **Release Date**: June 2026
+
 **Repository**: vibe desktop
+
 **Tag**: v20260615
 
 We are excited to announce the first official release of VIBE Desktop, a web based virtual research workstation that provides seamless access to scientific software, image analysis tools, interactive computing environments, and high performance computing resources through a unified desktop experience.
