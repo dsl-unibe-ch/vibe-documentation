@@ -35,9 +35,12 @@ nav:
     - FAQ: support/faq.md
   - Release Notes:
     - Overview: release-notes/release_notes_overview.md
-    - v20260511:
-      - VIBE Applications v20260511: release-notes/v20260511/release_notes_vibe_applications_v20260511.md
-      - VIBE Desktop v20260511: release-notes/v20260511/release_notes_vibe_desktop_v20260511.md
+    - v20260615:
+      - VIBE Applications v20260615: release-notes/v20260615/release_notes_vibe_applications_v20260615.md
+      - VIBE Desktop v20260615: release-notes/v20260615/release_notes_vibe_desktop_v20260615.md
+    - v20260915:
+      - VIBE Applications v20260915: release-notes/v20260915/release_notes_vibe_applications_v20260915.md
+      - VIBE Desktop v20260915: release-notes/v20260915/release_notes_vibe_desktop_v20260915.md
 
 # Configuration
 theme:
