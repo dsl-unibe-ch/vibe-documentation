@@ -11,7 +11,7 @@ To use the VIBE desktop you will need:
 
 * **Access to the campus network**: You need to be connected to the university network either through EduRoam or using the FortiClient VPN to connect remotely. Find instructions for setting up the VPN client in the IT Services [Internet and Network Access documentation](https://www.unibe.ch/universitaet/campus__und__infrastruktur/rund_um_computer/internetzugang/index_ger.html).
 
-* **An active UBELIX account**: You must have an active UBELIX account to access the VIBE desktop. Follow the steps outlined in the UBELIX documentation on [how to access UBELIX](https://hpc-unibe-ch.github.io/firststeps/accessUBELIX/).
+* **An active UBELIX account**: You must have an active UBELIX account to access the VIBE desktop. Follow the steps outlined in the UBELIX documentation on [how to access UBELIX](https://hpc-unibe-ch.github.io/firststeps/).
 
 * **A VIBE project account**: To access the full computational resources of the VIBE desktop, you need a VIBE project account.
 
