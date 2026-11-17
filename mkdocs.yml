@@ -25,6 +25,11 @@ nav:
     - Trackmate + Cellpose: examples/examples_trackmate_cellpose.md
     - Deconvolution with Huygens: examples/examples_deconvolution_huygens.md
     - 3D feature detection with Spotiflow and nnInteractive: examples/example_spotiflow_nnInteract.md
+  - Trainings:
+    - Deep Learning on VIBE: 
+      - Overview: trainings/deep_learning_on_vibe/overview.md
+      - Practical 1 Cellpose: trainings/deep_learning_on_vibe/cellpose_exercise.md
+      - Practical 2 CAREamics: trainings/deep_learning_on_vibe/careamics_exercise.md
   - In-Depth Explanations:
     - VIBE system configuration: in-depth-explanations/vibe_configuration_form.md
     - Launching Applications from the Terminal: in-depth-explanations/launching-applications-from-the-terminal.md 

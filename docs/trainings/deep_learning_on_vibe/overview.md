@@ -1,0 +1,5 @@
+# Deep learning tools using VIBE
+
+This workshop introduces deep learning for microscopy image analysis using VIBE (Virtual Imaging at the University of Bern), a virtual platform supported by the university’s high-performance computing infrastructure.
+
+Participants use graphical applications and Python notebooks to prepare data, train models, visualize results, and evaluate performance. The workshop features two exercises: Cellpose for cell or nucleus segmentation and CAREamics for image denoising. In the Cellpose exercise, participants refine ground-truth annotations and fine-tune a pretrained model. In the CAREamics exercise, they train on paired low- and high-quality images, monitor progress, and assess restoration while checking that biological structures are preserved. By the end, they will have practical experience applying deep learning workflows to microscopy data in VIBE.

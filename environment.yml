@@ -1,7 +1,11 @@
-name: vibedocs
+name: vibe_documentation_env
+channels:
+  - conda-forge
 dependencies:
-  - python=3.10
   - pip
   - pip:
-      - mkdocs-material
-      - mkdocs-git-revision-date-plugin
+    - mkdocs
+    - mkdocs-material
+    - mkdocs-material-extensions
+    - mkdocs-git-revision-date-localized-plugin
+    - mkdocs-literate-nav
