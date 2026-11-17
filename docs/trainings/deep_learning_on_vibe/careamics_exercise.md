@@ -18,15 +18,18 @@ In this exercise, we will try to use CAREamics to denoise microscopy data. First
 ### 1. Fine-tune your denoising model interactively with napari-careamics
 
 
-- Go to the project folder for this exercise and open the `Denosising_Dataset`. You will find the folder `manual_training` and inside, the data for training and testing as indicated bellow:
+- Go to the project folder for this exercise and open the `data_careamics`. You will find 3 folders, the folder `denoising-CARE_U2OS` contain the original dataset for this exercise. The other two folder are subsets of the same dataset with n=100 and n=500 respectively. Each of theses subsets are organized as shown bellow:
+
 ```bash
-└── manual_training
-    ├── Training
-    │   ├── high
-    │   └── low
-    └── test
-        ├── High
-        └── Low
+├── test
+│   ├── high
+│   └── low
+├── train
+│   ├── high
+│   └── low
+└── validation
+    ├── high
+    └── low
 ```
 
 As indicated by the [CARE](https://henriqueslab.org/pages/care) development and research group:
@@ -38,7 +41,7 @@ In our example the folder called "high" contain images of cellular nuclei staini
 
 - Launch the napari-careamics application from the Applications menu: `Applications -> VIBE -> VIBE Applications -> napari -> napari (napari-careamics-40.0.20)[VIBE]`
 
-- Visualize one pair of images (low and high) from any of the two sets: use for instance the test folder.
+- Visualize one pair of images (low and high) from any of the validation subset.
 
 - Launch the plugin within the napari app via: `Plugins -> CAREamics -> CARE``
 
@@ -48,10 +51,10 @@ In our example the folder called "high" contain images of cellular nuclei staini
 
 | Input         |  Dataset | 
 | :------------ | :------: |
-| Train         | ../manual_training/Training/low/ |
-| Val           | ../manual_training/test/low/     | 
-| Train target  | ../manual_training/Training/high/  
-| Val target    | ../manual_training/test/high/      |
+| Train         | ../U2OS_splits_n100_seed42/train/low/ |
+| Val           | ../U2OS_splits_n100_seed42/test/low/     | 
+| Train target  | ../U2OS_splits_n100_seed42/train/high/  
+| Val target    | ../U2OS_splits_n100_seed42/test/high/      |
 
 
 - From the training parameters tab select the following settings:
