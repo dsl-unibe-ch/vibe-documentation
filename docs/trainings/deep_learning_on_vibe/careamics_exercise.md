@@ -74,10 +74,12 @@ In our example the folder called "high" contain images of cellular nuclei staini
 
 ### 2. Fine-tuning your model programmatically (Optional)
 
+- Launch jupyterlab: `Applications -> VIBE -> VIBE Applications -> jupyterlab -> jupyterlab (napari-careamics-40.0.20)[VIBE]`
 - Open the notebook `02_train_model.ipynb` under the `scripts` folder.
 - Follow the instructions from the notebook and execute the cells for training a new model.
 
 ### 3. Asses the quality of the model from benchmark metrics
 
+- Launch jupyterlab: `Applications -> VIBE -> VIBE Applications -> jupyterlab -> jupyterlab (napari-careamics-40.0.20)[VIBE]`
 - Open the notebook `03_asses_model.ipynb` under the `scripts` folder.
 - Follow the instructions from the notebook and execute the cells to obtain and evaluate the metrics of your model.
