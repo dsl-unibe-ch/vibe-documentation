@@ -6,7 +6,7 @@ The aim of this exercise is to become familiar with [CAREamics](https://careamic
 You will:
 
 1. Get familiar with the GUI and explore some of its functionalities.
-2. Create your custom deep learning denoising model by reetraining the default model with a toy dataset.
+2. Create your custom deep learning denoising model by retraining the default model with a toy dataset.
 3. Monitor the loss curve to  understand the learning process. 
 5. Assess the denoising quality using standard metrics available through the CAREamics API.
 
@@ -14,6 +14,8 @@ You will:
 ## The tasks
 
 In this exercise, we will try to use CAREamics to denoise microscopy data. First we will try to load the dataset and visualize it via the napari interface. We will then adjust the settings to train our custom model and finall we will compute some metrics to asses how good the performance for this task the model is.
+
+The CARE_U2OS dataset used in this exercise was prepared for the MBL course from image set BBBC006v1 in the Broad Bioimage Benchmark Collection (Ljosa et al., Nature Methods, 2012). Artificial noise was added to the original images to create data for image-denoising training. The dataset is distributed under the CC0-1.0 license.
 
 ### 1. Fine-tune your denoising model interactively with napari-careamics
 
