@@ -31,7 +31,8 @@ In this exercise, we will try to use CAREamics to denoise microscopy data. First
 
 As indicated by the [CARE](https://henriqueslab.org/pages/care) development and research group:
 
-    CARE networks are trained on pairs of images depicting the same content - one image acquired under suboptimal conditions (low signal-to-noise ratio, low resolution etc.) serves as the input, while the other image shows the desired target quality. The type of restoration determines what constitutes the input and target images. For example, for image denoising the input could be a low laser power acquisition exhibiting high noise, while the target is a clean image obtained with higher laser power.
+!!! types tip ""
+    *CARE networks are trained on pairs of images depicting the same content - one image acquired under suboptimal conditions (low signal-to-noise ratio, low resolution etc.) serves as the input, while the other image shows the desired target quality. The type of restoration determines what constitutes the input and target images. For example, for image denoising the input could be a low laser power acquisition exhibiting high noise, while the target is a clean image obtained with higher laser power.*
 
 In our example the folder called "high" contain images of cellular nuclei staining with optimal acquisition conditions (high signal-to-noise ratio, SNR) and the folder called "low" contains the suboptimal images with low SNR.
 
