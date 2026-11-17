@@ -17,7 +17,7 @@ docs
    how-to-guides/         ## Detailed guides
    vibe-applications/     ## Collection of the README.md from all VIBE application containers
    workflows/             ## Detailed guides for selected workflows
-   examples /             ## Detailed examples for selected applications
+   examples/              ## Detailed examples for selected applications
    in-depth-explanations/ ## Technical documentation for advanced users
    contact/               ## Contact informations
 ```
