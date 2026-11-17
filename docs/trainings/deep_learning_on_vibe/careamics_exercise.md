@@ -66,3 +66,13 @@ In our example the folder called "high" contain images of cellular nuclei staini
 - Monitor the evolution of the training in the "Training Progress" panel and observe the loss curves for the training and validation sets.
 
 - Save your model under the "Export" section: select the checkpoint option and click the "Export Model" button. Provide a destination and name for your newly created model.
+
+### 2. Fine-tuning your model programmatically (Optional)
+
+- Open the notebook `02_train_model.ipynb` under the `scripts` folder.
+- Follow the instructions from the notebook and execute the cells for training a new model.
+
+### 3. Asses the quality of the model from benchmark metrics
+
+- Open the notebook `03_asses_model.ipynb` under the `scripts` folder.
+- Follow the instructions from the notebook and execute the cells to obtain and evaluate the metrics of your model.
