@@ -11,13 +11,11 @@ You will:
 4. Retrain a model using a toy dataset.
 5. Systematically assess segmentation quality using standard metrics available through the Cellpose API.
 
-
 ## The tasks
 
 We will try to use cellpose to segment microscopy images from live cells. We will first inspect the quality of the segmentation using specialized deep learning models and compare the segmentation with the correct annotation (ground truth). First we will try to iteratively fine tune a generalist model with our dataset using the GUI. Then we will try to do a more advanced exercise and train our model with more control programmatically.
 
 Finally, we will asses the performance quality of our model using standard benchmark and metrics.
-
 
 ### 1. Data preparation
 
@@ -25,7 +23,7 @@ To prepare your setup to run this project please follow these steps:
 
 - Create a new folder on your home directory for this project.
 - Copy the `2026_deep_learning_with_VIBE.zip` file located on the location: `/storage/research/dsl_vibe_rs/trainings/2026_deep_learning_with_VIBE` and unzip the file. Hint: right click and try to decompress it with PeaZip. From now on you will work in your own copy of this project. 
-- Explore the `../data_cp/` folder, it contains the following 5 folders 
+- Explore the `../cellpose/data_cp/` folder, it contains the following 5 folders 
     - `A172`
     - `A172_splits_n50_seed42`
     - `A172_splits_n100_seed42`
@@ -58,7 +56,6 @@ Steps:
 - navigate to the folder you saved the the project and open the 
 jupyter notebook `01_data_preparation.ipynb` and follow the instructions to execute the full script. This will check it the data directories exist, if not, it will be pulled from zenodo, extract it and splitting the data and reorganize the files. If the scripts run correctly you will be able to see the folders with the same content as explained above.
 
-
 ### 2. Manually fine-tuning your model with human in the loop
 
 1. Launch the cellpose application by navigating to: `Applications -> VIBE -> VIBE Applications -> cellpose -> cellpose (cellpose-gui-3.1.1.3) [VIBE]`
@@ -74,7 +71,6 @@ jupyter notebook `01_data_preparation.ipynb` and follow the instructions to exec
 6. Train your own model with your new annotations: from the top menu select: `Models -> Train new model with image + mask in folder`. You can adjust here your train settings. Note that at the right site will be displayed teh mask that you have created. For the model parameters you can reduce the n_epochs, give a memorable name to your model and let the other values as they are. click OK to start your training. Monitor the training process on the command line.
 
 7. Use your model to predict/segment your images: load one of your images and under the Segmentation panel use the "user-trained models" to select your newly trained model. Hit run to use it for segmenting your images. Do you see any improvement?
-
 
 ### 3. Fine-tuning your model programmatically (Optional)
 
