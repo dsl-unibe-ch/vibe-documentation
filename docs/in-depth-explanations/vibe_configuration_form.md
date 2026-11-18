@@ -48,15 +48,14 @@ Select from the available GPUs. VIBE's dedicated graphics cards are the `RTX 409
 
 ### Instance Size
 
- Define the amount of resources (CPU cores and RAM) for your session. Three default configurations are available:
+Define the amount of resources (CPU cores and RAM) for your session. Three default configurations are available:
 
- | Instance size  | Number of cores | RAM size (GB) | note |
- | :----------- : | :-------------: | :-----------: | :--: |
- |      Small     |        4        |       16       | Good for small tasks such as browsing your files and opening small images |
- |      Medium    |        8        |       32       | For more demanding tasks that involve computations on your images, etc |
- |      Large     |        16       |        64      | For visualizing in 2D or 3D modest datasets and some modest computations |
- |      Custom    |        -        |         -      | Select this if you want to use a different configuration. |
-
+| Instance size  | Number of cores | RAM size (GB) | note |
+| :------------: | :-------------: | :-----------: | :--: |
+|      Small     |        4        |       16      | Good for small tasks such as browsing your files and opening small images |
+|      Medium    |        8        |       32      | For more demanding tasks that involve computations on your images, etc |
+|      Large     |        16       |        64     | For visualizing in 2D or 3D modest datasets and some modest computations |
+|      Custom    |        -        |         -     | Select this if you want to use a different configuration. |
 
 ### Number of GPUs
 
