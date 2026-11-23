@@ -7,6 +7,7 @@ This repository contains the source for VIBE's Github Pages documentation.
 
 The structure of the repo 
 
+```bash
 /
 |- docs
    |- index.md
@@ -19,3 +20,5 @@ The structure of the repo
    |- examples: Detailed examples for selected applications
    |- in-depth-explanations: Technical documentation for advanced users
    |_ contact: Contact informations
+
+```
